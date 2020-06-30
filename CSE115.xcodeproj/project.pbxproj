@@ -15,6 +15,10 @@
 		47E587D724AAA52700CEA744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E587D524AAA52700CEA744 /* LaunchScreen.storyboard */; };
 		47E587E224AAA52700CEA744 /* CSE115Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587E124AAA52700CEA744 /* CSE115Tests.swift */; };
 		47E587ED24AAA52700CEA744 /* CSE115UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587EC24AAA52700CEA744 /* CSE115UITests.swift */; };
+		47E587FB24AABAA900CEA744 /* CustomBut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587FA24AABAA900CEA744 /* CustomBut.swift */; };
+		47E587FE24AAC27500CEA744 /* Italiana-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47E587FD24AAC27500CEA744 /* Italiana-Regular.ttf */; };
+		47EF77B224ABE3CD00B2E81E /* icons8-google-150.png in Resources */ = {isa = PBXBuildFile; fileRef = 47EF77B124ABE3CD00B2E81E /* icons8-google-150.png */; };
+		47EF77B424ABE4EB00B2E81E /* icons8-facebook-150.png in Resources */ = {isa = PBXBuildFile; fileRef = 47EF77B324ABE4EB00B2E81E /* icons8-facebook-150.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		47E587E824AAA52700CEA744 /* CSE115UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSE115UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E587EC24AAA52700CEA744 /* CSE115UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSE115UITests.swift; sourceTree = "<group>"; };
 		47E587EE24AAA52700CEA744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E587FA24AABAA900CEA744 /* CustomBut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBut.swift; sourceTree = "<group>"; };
+		47E587FD24AAC27500CEA744 /* Italiana-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Italiana-Regular.ttf"; sourceTree = "<group>"; };
+		47EF77B124ABE3CD00B2E81E /* icons8-google-150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-google-150.png"; sourceTree = "<group>"; };
+		47EF77B324ABE4EB00B2E81E /* icons8-facebook-150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-facebook-150.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		47E587C924AAA52600CEA744 /* CSE115 */ = {
 			isa = PBXGroup;
 			children = (
+				47E587FC24AAC21C00CEA744 /* Fonts and icons */,
 				47E587CA24AAA52600CEA744 /* AppDelegate.swift */,
 				47E587CC24AAA52600CEA744 /* SceneDelegate.swift */,
 				47E587CE24AAA52600CEA744 /* ViewController.swift */,
@@ -106,6 +115,7 @@
 				47E587D324AAA52700CEA744 /* Assets.xcassets */,
 				47E587D524AAA52700CEA744 /* LaunchScreen.storyboard */,
 				47E587D824AAA52700CEA744 /* Info.plist */,
+				47E587FA24AABAA900CEA744 /* CustomBut.swift */,
 			);
 			path = CSE115;
 			sourceTree = "<group>";
@@ -126,6 +136,16 @@
 				47E587EE24AAA52700CEA744 /* Info.plist */,
 			);
 			path = CSE115UITests;
+			sourceTree = "<group>";
+		};
+		47E587FC24AAC21C00CEA744 /* Fonts and icons */ = {
+			isa = PBXGroup;
+			children = (
+				47EF77B324ABE4EB00B2E81E /* icons8-facebook-150.png */,
+				47EF77B124ABE3CD00B2E81E /* icons8-google-150.png */,
+				47E587FD24AAC27500CEA744 /* Italiana-Regular.ttf */,
+			);
+			path = "Fonts and icons";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47EF77B424ABE4EB00B2E81E /* icons8-facebook-150.png in Resources */,
+				47EF77B224ABE3CD00B2E81E /* icons8-google-150.png in Resources */,
 				47E587D724AAA52700CEA744 /* LaunchScreen.storyboard in Resources */,
 				47E587D424AAA52700CEA744 /* Assets.xcassets in Resources */,
+				47E587FE24AAC27500CEA744 /* Italiana-Regular.ttf in Resources */,
 				47E587D224AAA52600CEA744 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E587FB24AABAA900CEA744 /* CustomBut.swift in Sources */,
 				47E587CF24AAA52600CEA744 /* ViewController.swift in Sources */,
 				47E587CB24AAA52600CEA744 /* AppDelegate.swift in Sources */,
 				47E587CD24AAA52600CEA744 /* SceneDelegate.swift in Sources */,
