@@ -19,6 +19,8 @@
 		47E587FE24AAC27500CEA744 /* Italiana-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47E587FD24AAC27500CEA744 /* Italiana-Regular.ttf */; };
 		47EF77B224ABE3CD00B2E81E /* icons8-google-150.png in Resources */ = {isa = PBXBuildFile; fileRef = 47EF77B124ABE3CD00B2E81E /* icons8-google-150.png */; };
 		47EF77B424ABE4EB00B2E81E /* icons8-facebook-150.png in Resources */ = {isa = PBXBuildFile; fileRef = 47EF77B324ABE4EB00B2E81E /* icons8-facebook-150.png */; };
+		47EF77B624ABEA4400B2E81E /* icons8-facebook-150 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 47EF77B524ABEA4400B2E81E /* icons8-facebook-150 (1).png */; };
+		47EF77B824ABEAAB00B2E81E /* icons8-twitter-circled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 47EF77B724ABEAAB00B2E81E /* icons8-twitter-circled-100.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		47E587FD24AAC27500CEA744 /* Italiana-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Italiana-Regular.ttf"; sourceTree = "<group>"; };
 		47EF77B124ABE3CD00B2E81E /* icons8-google-150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-google-150.png"; sourceTree = "<group>"; };
 		47EF77B324ABE4EB00B2E81E /* icons8-facebook-150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-facebook-150.png"; sourceTree = "<group>"; };
+		47EF77B524ABEA4400B2E81E /* icons8-facebook-150 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-facebook-150 (1).png"; sourceTree = "<group>"; };
+		47EF77B724ABEAAB00B2E81E /* icons8-twitter-circled-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-twitter-circled-100.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 		47E587FC24AAC21C00CEA744 /* Fonts and icons */ = {
 			isa = PBXGroup;
 			children = (
+				47EF77B724ABEAAB00B2E81E /* icons8-twitter-circled-100.png */,
+				47EF77B524ABEA4400B2E81E /* icons8-facebook-150 (1).png */,
 				47EF77B324ABE4EB00B2E81E /* icons8-facebook-150.png */,
 				47EF77B124ABE3CD00B2E81E /* icons8-google-150.png */,
 				47E587FD24AAC27500CEA744 /* Italiana-Regular.ttf */,
@@ -253,10 +259,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				47EF77B424ABE4EB00B2E81E /* icons8-facebook-150.png in Resources */,
+				47EF77B624ABEA4400B2E81E /* icons8-facebook-150 (1).png in Resources */,
 				47EF77B224ABE3CD00B2E81E /* icons8-google-150.png in Resources */,
 				47E587D724AAA52700CEA744 /* LaunchScreen.storyboard in Resources */,
 				47E587D424AAA52700CEA744 /* Assets.xcassets in Resources */,
 				47E587FE24AAC27500CEA744 /* Italiana-Regular.ttf in Resources */,
+				47EF77B824ABEAAB00B2E81E /* icons8-twitter-circled-100.png in Resources */,
 				47E587D224AAA52600CEA744 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

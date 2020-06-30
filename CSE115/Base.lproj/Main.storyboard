@@ -33,7 +33,7 @@
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="xtV-Il-Jrl"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="yGm-iY-8Uh"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="yGm-iY-8Uh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -46,7 +46,7 @@
                                 <rect key="frame" x="50" y="711" width="314" height="41"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="LGT-vK-CEc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="LGT-vK-CEc"/>
                                     <constraint firstAttribute="height" constant="41" id="WdA-sI-DWx"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="41" id="a5t-g3-fiB"/>
                                 </constraints>
@@ -89,18 +89,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1K-q8-Je1">
-                                <rect key="frame" x="186" y="514" width="42" height="31"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPY-hT-AYM" userLabel="TwitterBut">
+                                <rect key="frame" x="269" y="524" width="95" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="icons8-twitter-circled-100.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1K-q8-Je1" userLabel="Googlebut">
+                                <rect key="frame" x="168" y="524" width="79" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="icons8-google-150.png"/>
                                 <connections>
                                     <action selector="GoogleBut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nFK-5I-h4H"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgE-8E-mUk">
-                                <rect key="frame" x="50" y="507" width="59" height="44"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiO-VA-ALa">
+                                <rect key="frame" x="50" y="524" width="83" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="icons8-facebook-150.png"/>
+                                <state key="normal" title="Button" image="icons8-facebook-150 (1).png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -140,7 +145,8 @@
     </scenes>
     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
-        <image name="icons8-facebook-150.png" width="150" height="150"/>
+        <image name="icons8-facebook-150 (1).png" width="150" height="150"/>
         <image name="icons8-google-150.png" width="150" height="150"/>
+        <image name="icons8-twitter-circled-100.png" width="100" height="100"/>
     </resources>
 </document>
