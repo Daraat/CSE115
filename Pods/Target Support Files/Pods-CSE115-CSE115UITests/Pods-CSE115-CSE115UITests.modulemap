@@ -1,0 +1,6 @@
+framework module Pods_CSE115_CSE115UITests {
+  umbrella header "Pods-CSE115-CSE115UITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
