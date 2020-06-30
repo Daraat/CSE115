@@ -29,10 +29,9 @@
                                 <textInputTraits key="textInputTraits" textContentType="email"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WaY-61-Vd4" customClass="CustomBut" customModule="CSE115" customModuleProvider="target">
-                                <rect key="frame" x="50" y="392" width="314" height="41"/>
+                                <rect key="frame" x="50" y="392" width="314" height="55"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="xtV-Il-Jrl"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="yGm-iY-8Uh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -43,12 +42,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yB9-sD-mS5" customClass="CustomBut" customModule="CSE115" customModuleProvider="target">
-                                <rect key="frame" x="50" y="711" width="314" height="41"/>
+                                <rect key="frame" x="50" y="697" width="314" height="55"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="55" id="LGT-vK-CEc"/>
-                                    <constraint firstAttribute="height" constant="41" id="WdA-sI-DWx"/>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="41" id="a5t-g3-fiB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -81,7 +78,7 @@
                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdg-3y-dP2">
-                                <rect key="frame" x="196" y="652" width="23" height="21"/>
+                                <rect key="frame" x="196" y="638" width="23" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Dqc-mM-voK"/>
                                 </constraints>
