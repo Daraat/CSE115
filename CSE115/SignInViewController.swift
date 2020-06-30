@@ -46,9 +46,9 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func regBut(_ sender: Any) {
-        
-        
+
+    @IBAction func RegBut(_ sender: Any) {
+        print("ok")
     }
     
     @IBAction func GoogleBut(_ sender: Any) {
