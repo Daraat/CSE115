@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import SwiftKeychainWrapper
 
 class ViewController: UIViewController {
     
@@ -22,39 +24,56 @@ class ViewController: UIViewController {
         setBackgound()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if KeychainWrapper.standard.hasValue(forKey: KEY_UID){
+            print("UID Found in keychain")
+            performSegue(withIdentifier: "TODO", sender: nil)
+        }
+    }
+    
     func setBackgound(){
         view.addSubview(backgroundImageView)
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
         backgroundImageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         backgroundImageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         backgroundImageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        
-        
-        
-        
-        
     }
+    
     
     
     @IBAction func signbut(_ sender: Any) {
         
         let MyEmail =  String(emailTxt.text!)
         let MyPass = String(passTxt.text!)
-        if(MyPass=="" && MyEmail == " " ){
-            
+        
+        if(isValidEmail(MyEmail) && MyPass != ""){
+            completeSignIn(email: MyEmail, password: MyPass)
         }
         
     }
     
 
     @IBAction func RegBut(_ sender: Any) {
-        print("ok")
+        performSegue(withIdentifier: "gotoSignUp", sender: nil)
     }
     
     @IBAction func GoogleBut(_ sender: Any) {
         
-        
-        
-        
+    }
+    
+    func completeSignIn(email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password, completion: nil!)
+       //let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+       // print("Data saved to keychain \(keychainResult)")
+        performSegue(withIdentifier: "TODO", sender: nil)
+    }
+    
+    //Credit Maxim Shoustin & Zandor Smith: https://stackoverflow.com/a/25471164
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
     }
 }
