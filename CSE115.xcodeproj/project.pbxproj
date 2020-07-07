@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		1093DCF05E0C867DA246EC7E /* Pods_CSE115.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1DA7EE3790E0EA2F809A37 /* Pods_CSE115.framework */; };
 		282FDD7124AF827200392D0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282FDD7024AF827200392D0C /* Constants.swift */; };
-		287CA0C624AEB9AF007C3718 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 287CA0C524AEB9AF007C3718 /* GoogleService-Info.plist */; };
 		41B9E81158FC4D74FAFAA066 /* Pods_CSE115_CSE115UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D1DDF7EDBF172A5FEB46A4 /* Pods_CSE115_CSE115UITests.framework */; };
+		471E312B24B5256400ED37A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 471E312A24B5256300ED37A3 /* GoogleService-Info.plist */; };
 		47E587CB24AAA52600CEA744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CA24AAA52600CEA744 /* AppDelegate.swift */; };
 		47E587CD24AAA52600CEA744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CC24AAA52600CEA744 /* SceneDelegate.swift */; };
 		47E587CF24AAA52600CEA744 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CE24AAA52600CEA744 /* SignInViewController.swift */; };
@@ -51,7 +51,7 @@
 		0690DD257DFFCF99AE573240 /* Pods-CSE115.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSE115.release.xcconfig"; path = "Target Support Files/Pods-CSE115/Pods-CSE115.release.xcconfig"; sourceTree = "<group>"; };
 		1055634C66D0C5E6AE5B4E34 /* Pods-CSE115-CSE115UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSE115-CSE115UITests.debug.xcconfig"; path = "Target Support Files/Pods-CSE115-CSE115UITests/Pods-CSE115-CSE115UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		282FDD7024AF827200392D0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		287CA0C524AEB9AF007C3718 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		471E312A24B5256300ED37A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "CSE115/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		47E587C724AAA52600CEA744 /* CSE115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSE115.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E587CA24AAA52600CEA744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47E587CC24AAA52600CEA744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +161,7 @@
 		47E587C924AAA52600CEA744 /* CSE115 */ = {
 			isa = PBXGroup;
 			children = (
+				471E312A24B5256300ED37A3 /* GoogleService-Info.plist */,
 				282FDD7624AFE72900392D0C /* View Controllers */,
 				282FDD6F24AF825500392D0C /* Utils */,
 				47E587FC24AAC21C00CEA744 /* Fonts and icons */,
@@ -170,7 +171,6 @@
 				47E587D324AAA52700CEA744 /* Assets.xcassets */,
 				47E587D524AAA52700CEA744 /* LaunchScreen.storyboard */,
 				47E587D824AAA52700CEA744 /* Info.plist */,
-				287CA0C524AEB9AF007C3718 /* GoogleService-Info.plist */,
 				47E587FA24AABAA900CEA744 /* CustomBut.swift */,
 			);
 			path = CSE115;
@@ -330,12 +330,12 @@
 			files = (
 				47EF77B424ABE4EB00B2E81E /* icons8-facebook-150.png in Resources */,
 				47EF77B624ABEA4400B2E81E /* icons8-facebook-150 (1).png in Resources */,
+				471E312B24B5256400ED37A3 /* GoogleService-Info.plist in Resources */,
 				47EF77B224ABE3CD00B2E81E /* icons8-google-150.png in Resources */,
 				47E587D724AAA52700CEA744 /* LaunchScreen.storyboard in Resources */,
 				47E587D424AAA52700CEA744 /* Assets.xcassets in Resources */,
 				47E587FE24AAC27500CEA744 /* Italiana-Regular.ttf in Resources */,
 				47EF77B824ABEAAB00B2E81E /* icons8-twitter-circled-100.png in Resources */,
-				287CA0C624AEB9AF007C3718 /* GoogleService-Info.plist in Resources */,
 				47E587D224AAA52600CEA744 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -134,14 +134,17 @@
                             <constraint firstItem="yB9-sD-mS5" firstAttribute="top" secondItem="mdg-3y-dP2" secondAttribute="bottom" constant="38" id="TlR-UK-fUF"/>
                             <constraint firstItem="mdg-3y-dP2" firstAttribute="top" secondItem="U1K-q8-Je1" secondAttribute="bottom" constant="34" id="XxZ-0b-pM8"/>
                             <constraint firstItem="TbO-lZ-dvo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="YdY-KH-64O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yB9-sD-mS5" secondAttribute="trailing" constant="49.5" id="YsA-Vu-cl3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yB9-sD-mS5" secondAttribute="bottom" constant="110" id="d3e-lf-cDI"/>
                             <constraint firstItem="vc2-uX-YHg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dkz-Yu-5zX"/>
                             <constraint firstItem="DPY-hT-AYM" firstAttribute="leading" secondItem="U1K-q8-Je1" secondAttribute="trailing" constant="35" id="eHe-BD-l48"/>
+                            <constraint firstItem="yB9-sD-mS5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49.5" id="hdF-Hn-cLh"/>
                             <constraint firstItem="WaY-61-Vd4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hdT-FH-G3a"/>
                             <constraint firstItem="wXG-om-b8h" firstAttribute="top" secondItem="TbO-lZ-dvo" secondAttribute="bottom" constant="57" id="kUd-T5-dOP"/>
                             <constraint firstItem="DPY-hT-AYM" firstAttribute="top" secondItem="WaY-61-Vd4" secondAttribute="bottom" constant="77" id="qEW-zv-4tg"/>
                             <constraint firstItem="mdg-3y-dP2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="v9X-JO-KyE"/>
                             <constraint firstItem="TbO-lZ-dvo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="x3l-mJ-ete"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yB9-sD-mS5" secondAttribute="bottom" constant="110" id="xlb-Rl-jic"/>
                             <constraint firstItem="U1K-q8-Je1" firstAttribute="top" secondItem="WaY-61-Vd4" secondAttribute="bottom" constant="77" id="zQr-ZR-dGa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -189,7 +192,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPl-xf-cP7">
-                                <rect key="frame" x="50" y="306" width="180" height="33"/>
+                                <rect key="frame" x="50" y="306" width="168.5" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="Q7O-L3-iAc"/>
                                 </constraints>
@@ -198,7 +201,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter and Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzg-Ud-yrh">
-                                <rect key="frame" x="50" y="396" width="347.5" height="32"/>
+                                <rect key="frame" x="50" y="396" width="326" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="SF7-qL-uNp"/>
                                 </constraints>
@@ -233,7 +236,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOANR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOL-3W-yPs">
-                                <rect key="frame" x="106" y="47" width="202.5" height="71"/>
+                                <rect key="frame" x="119" y="47" width="176" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="Eo3-aq-fNL"/>
                                 </constraints>
