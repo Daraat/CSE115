@@ -189,7 +189,7 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPl-xf-cP7">
-                                <rect key="frame" x="50" y="306" width="180" height="33"/>
+                                <rect key="frame" x="50" y="306" width="168.5" height="33"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="Q7O-L3-iAc"/>
                                 </constraints>
@@ -198,7 +198,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter and Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lzg-Ud-yrh">
-                                <rect key="frame" x="50" y="396" width="347.5" height="32"/>
+                                <rect key="frame" x="50" y="396" width="326" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="32" id="SF7-qL-uNp"/>
                                 </constraints>
@@ -233,7 +233,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOANR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOL-3W-yPs">
-                                <rect key="frame" x="106" y="47" width="202.5" height="71"/>
+                                <rect key="frame" x="119" y="47" width="176" height="71"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="Eo3-aq-fNL"/>
                                 </constraints>
