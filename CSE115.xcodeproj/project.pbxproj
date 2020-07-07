@@ -127,6 +127,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		282FDD7624AFE72900392D0C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				47EF77B924ABF50900B2E81E /* RegViewController.swift */,
+				47E587CE24AAA52600CEA744 /* SignInViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		47E587BE24AAA52600CEA744 = {
 			isa = PBXGroup;
 			children = (
@@ -152,12 +161,11 @@
 		47E587C924AAA52600CEA744 /* CSE115 */ = {
 			isa = PBXGroup;
 			children = (
+				282FDD7624AFE72900392D0C /* View Controllers */,
 				282FDD6F24AF825500392D0C /* Utils */,
 				47E587FC24AAC21C00CEA744 /* Fonts and icons */,
 				47E587CA24AAA52600CEA744 /* AppDelegate.swift */,
 				47E587CC24AAA52600CEA744 /* SceneDelegate.swift */,
-				47E587CE24AAA52600CEA744 /* SignInViewController.swift */,
-				47EF77B924ABF50900B2E81E /* RegViewController.swift */,
 				47E587D024AAA52600CEA744 /* Main.storyboard */,
 				47E587D324AAA52700CEA744 /* Assets.xcassets */,
 				47E587D524AAA52700CEA744 /* LaunchScreen.storyboard */,

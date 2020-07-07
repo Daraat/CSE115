@@ -10,6 +10,21 @@ import UIKit
 import Firebase
 import SwiftKeychainWrapper
 
+//Extends UIVC to close the keyboard when we click outside of the text box
+//Credit Esqarrouth & IgniteCoders: https://stackoverflow.com/a/27079103
+
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var emailTxt: UITextField!
@@ -19,8 +34,7 @@ class ViewController: UIViewController {
     let backgroundImageView = UIImageView()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        self.hideKeyboardWhenTappedAround()
         setBackgound()
         // Do any additional setup after loading the view.
     }
@@ -44,12 +58,22 @@ class ViewController: UIViewController {
     
     @IBAction func signbut(_ sender: Any) {
         
-        let MyEmail =  String(emailTxt.text!)
-        let MyPass = String(passTxt.text!)
-        
-        if(isValidEmail(MyEmail) && MyPass != ""){
-            completeSignIn(email: MyEmail, password: MyPass)
+        guard let email =  emailTxt.text, !email.isEmpty,
+                let password = passTxt.text, !password.isEmpty
+        else{
+            print("Fields missing data")
+            return
         }
+        FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: {result, error in
+            if error != nil{
+                print("LOGIN: User login failed")
+                return
+            }else{
+                print("SIGNUP: User login succesful")
+                //TODO: perform segue
+            }
+        })
+        
         
     }
     
@@ -60,20 +84,5 @@ class ViewController: UIViewController {
     
     @IBAction func GoogleBut(_ sender: Any) {
         
-    }
-    
-    func completeSignIn(email: String, password: String) {
-        Auth.auth().signIn(withEmail: email, password: password, completion: nil!)
-       //let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
-       // print("Data saved to keychain \(keychainResult)")
-        performSegue(withIdentifier: "TODO", sender: nil)
-    }
-    
-    //Credit Maxim Shoustin & Zandor Smith: https://stackoverflow.com/a/25471164
-    func isValidEmail(_ email: String) -> Bool {
-        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
-        return emailPred.evaluate(with: email)
     }
 }
