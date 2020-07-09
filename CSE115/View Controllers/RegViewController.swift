@@ -23,6 +23,9 @@ class RegViewController: UIViewController {
     // Do any additional setup after loading the view.
     }
 
+    @IBAction func backBtnPressed(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     @IBAction func regFinal(_ sender: Any) {
         guard let email = EmailTextField.text, !email.isEmpty,
             let password = PasswordTextField.text, !password.isEmpty,
