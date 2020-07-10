@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 import SwiftKeychainWrapper
 
 //Extends UIVC to close the keyboard when we click outside of the text box

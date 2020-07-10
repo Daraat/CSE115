@@ -27,6 +27,7 @@
 		47EF77B824ABEAAB00B2E81E /* icons8-twitter-circled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 47EF77B724ABEAAB00B2E81E /* icons8-twitter-circled-100.png */; };
 		47EF77BA24ABF50900B2E81E /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EF77B924ABF50900B2E81E /* RegViewController.swift */; };
 		86D6C4327870445279264D48 /* Pods_CSE115Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001133A2B19EE7BBCC63163F /* Pods_CSE115Tests.framework */; };
+		8C1762EA24B9019C0018E7B8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1762E924B9019C0018E7B8 /* MenuViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		47EF77B924ABF50900B2E81E /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
 		48655168947386B9F5D04F8F /* Pods-CSE115Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSE115Tests.debug.xcconfig"; path = "Target Support Files/Pods-CSE115Tests/Pods-CSE115Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4C09D20D75F7A5EED577369E /* Pods-CSE115Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSE115Tests.release.xcconfig"; path = "Target Support Files/Pods-CSE115Tests/Pods-CSE115Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8C1762E924B9019C0018E7B8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9F1DA7EE3790E0EA2F809A37 /* Pods_CSE115.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSE115.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27DDB5F929D8F1F004E5981 /* Pods-CSE115.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSE115.debug.xcconfig"; path = "Target Support Files/Pods-CSE115/Pods-CSE115.debug.xcconfig"; sourceTree = "<group>"; };
 		E3D1DDF7EDBF172A5FEB46A4 /* Pods_CSE115_CSE115UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSE115_CSE115UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 			children = (
 				47EF77B924ABF50900B2E81E /* RegViewController.swift */,
 				47E587CE24AAA52600CEA744 /* SignInViewController.swift */,
+				8C1762E924B9019C0018E7B8 /* MenuViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				47E587FB24AABAA900CEA744 /* CustomBut.swift in Sources */,
 				47E587CF24AAA52600CEA744 /* SignInViewController.swift in Sources */,
 				47EF77BA24ABF50900B2E81E /* RegViewController.swift in Sources */,
+				8C1762EA24B9019C0018E7B8 /* MenuViewController.swift in Sources */,
 				47E587CB24AAA52600CEA744 /* AppDelegate.swift in Sources */,
 				47E587CD24AAA52600CEA744 /* SceneDelegate.swift in Sources */,
 				282FDD7124AF827200392D0C /* Constants.swift in Sources */,
