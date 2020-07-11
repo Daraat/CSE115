@@ -121,8 +121,13 @@
                             <constraint firstItem="wXG-om-b8h" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DMT-kL-rLG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yB9-sD-mS5" secondAttribute="trailing" constant="48" id="W4S-Ri-Yhz"/>
                             <constraint firstItem="TbO-lZ-dvo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="YdY-KH-64O"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yB9-sD-mS5" secondAttribute="bottom" id="aJN-0K-t0S"/>
+                          
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yB9-sD-mS5" secondAttribute="trailing" constant="49.5" id="YsA-Vu-cl3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yB9-sD-mS5" secondAttribute="bottom" constant="110" id="d3e-lf-cDI"/>
                             <constraint firstItem="vc2-uX-YHg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dkz-Yu-5zX"/>
+                            <constraint firstItem="DPY-hT-AYM" firstAttribute="leading" secondItem="U1K-q8-Je1" secondAttribute="trailing" constant="35" id="eHe-BD-l48"/>
+                            <constraint firstItem="yB9-sD-mS5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49.5" id="hdF-Hn-cLh"/>
+
                             <constraint firstItem="WaY-61-Vd4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hdT-FH-G3a"/>
                             <constraint firstItem="vc2-uX-YHg" firstAttribute="height" secondItem="wXG-om-b8h" secondAttribute="height" id="ht6-5C-SJQ"/>
                             <constraint firstItem="LwF-33-AXS" firstAttribute="top" secondItem="WaY-61-Vd4" secondAttribute="bottom" constant="63" id="jPO-HZ-shp"/>
@@ -131,9 +136,10 @@
                             <constraint firstItem="LwF-33-AXS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qwO-TJ-U6L"/>
                             <constraint firstItem="vc2-uX-YHg" firstAttribute="width" secondItem="wXG-om-b8h" secondAttribute="width" id="wQ6-ru-7N8"/>
                             <constraint firstItem="TbO-lZ-dvo" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="x3l-mJ-ete"/>
-                            <constraint firstItem="yB9-sD-mS5" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-10" id="yJd-VN-YlL">
-                                <variation key="heightClass=regular" constant="100"/>
-                            </constraint>
+                          
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yB9-sD-mS5" secondAttribute="bottom" constant="110" id="xlb-Rl-jic"/>
+                            <constraint firstItem="U1K-q8-Je1" firstAttribute="top" secondItem="WaY-61-Vd4" secondAttribute="bottom" constant="77" id="zQr-ZR-dGa"/>
+
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <variation key="heightClass=regular">
@@ -185,8 +191,10 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPl-xf-cP7">
-                                <rect key="frame" x="49.999999999999986" y="306" width="168.66666666666663" height="33"/>
-                                <constraints>
+
+                                <rect key="frame" x="50" y="306" width="168.5" height="33"/>
+
+                              <constraints>
                                     <constraint firstAttribute="height" constant="33" id="Q7O-L3-iAc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Italiana-Regular" family="Italiana" pointSize="28"/>
