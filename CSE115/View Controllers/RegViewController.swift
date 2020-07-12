@@ -43,7 +43,7 @@ class RegViewController: UIViewController {
                 return
             }else{
                 print("SIGNUP: User creation succesful")
-                //TODO: perform segue to main
+                self.performSegue(withIdentifier: "goToHome", sender: nil)
             }
         })
     }

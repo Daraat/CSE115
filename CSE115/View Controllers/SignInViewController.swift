@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         if KeychainWrapper.standard.hasValue(forKey: KEY_UID){
             print("UID Found in keychain")
-            //performSegue(withIdentifier: "TODO", sender: nil)
+            performSegue(withIdentifier: "goToHome", sender: nil)
         }
     }
     
@@ -72,7 +72,7 @@ class ViewController: UIViewController {
             }else{
                 KeychainWrapper.standard.set((result?.user.uid)!, forKey: KEY_UID)
                 print("SIGNUP: User login succesful")
-                //TODO: perform segue
+                self.performSegue(withIdentifier: "goToHome", sender: nil)
             }
         })
         
