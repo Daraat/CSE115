@@ -10,6 +10,7 @@
 		1093DCF05E0C867DA246EC7E /* Pods_CSE115.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1DA7EE3790E0EA2F809A37 /* Pods_CSE115.framework */; };
 		282FDD7124AF827200392D0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282FDD7024AF827200392D0C /* Constants.swift */; };
 		2866EE1E24BAABFD003247D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2866EE1D24BAABFD003247D1 /* HomeViewController.swift */; };
+		2866EE2024BABD72003247D1 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2866EE1F24BABD72003247D1 /* TransactionViewController.swift */; };
 		41B9E81158FC4D74FAFAA066 /* Pods_CSE115_CSE115UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D1DDF7EDBF172A5FEB46A4 /* Pods_CSE115_CSE115UITests.framework */; };
 		471E312B24B5256400ED37A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 471E312A24B5256300ED37A3 /* GoogleService-Info.plist */; };
 		47E587CB24AAA52600CEA744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CA24AAA52600CEA744 /* AppDelegate.swift */; };
@@ -53,6 +54,7 @@
 		1055634C66D0C5E6AE5B4E34 /* Pods-CSE115-CSE115UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSE115-CSE115UITests.debug.xcconfig"; path = "Target Support Files/Pods-CSE115-CSE115UITests/Pods-CSE115-CSE115UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		282FDD7024AF827200392D0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2866EE1D24BAABFD003247D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2866EE1F24BABD72003247D1 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		471E312A24B5256300ED37A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "CSE115/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		47E587C724AAA52600CEA744 /* CSE115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSE115.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E587CA24AAA52600CEA744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				47EF77B924ABF50900B2E81E /* RegViewController.swift */,
 				47E587CE24AAA52600CEA744 /* SignInViewController.swift */,
 				2866EE1D24BAABFD003247D1 /* HomeViewController.swift */,
+				2866EE1F24BABD72003247D1 /* TransactionViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				47E587CD24AAA52600CEA744 /* SceneDelegate.swift in Sources */,
 				2866EE1E24BAABFD003247D1 /* HomeViewController.swift in Sources */,
 				282FDD7124AF827200392D0C /* Constants.swift in Sources */,
+				2866EE2024BABD72003247D1 /* TransactionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

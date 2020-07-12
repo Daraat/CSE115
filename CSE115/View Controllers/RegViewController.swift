@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import SwiftKeychainWrapper
 class RegViewController: UIViewController {
 
 
@@ -43,7 +44,8 @@ class RegViewController: UIViewController {
                 return
             }else{
                 print("SIGNUP: User creation succesful")
-                self.performSegue(withIdentifier: "goToHome", sender: nil)
+                KeychainWrapper.standard.set((result?.user.uid)!, forKey: KEY_UID)
+                self.dismiss(animated: true, completion: nil)
             }
         })
     }

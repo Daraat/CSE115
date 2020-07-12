@@ -82,6 +82,7 @@ class ViewController: UIViewController {
 
     @IBAction func RegBut(_ sender: Any) {
         performSegue(withIdentifier: "gotoSignUp", sender: nil)
+        
     }
     
     @IBAction func GoogleBut(_ sender: Any) {

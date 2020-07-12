@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  TransactionViewController.swift
 //  CSE115
 //
 //  Created by Raphael Zaafrani on 7/11/20.
@@ -8,12 +8,10 @@
 
 import UIKit
 import Firebase
-import SwiftKeychainWrapper
 
+class TransactionViewController: UIViewController {
 
-class HomeViewController: UIViewController {
-    @IBAction func logOutBtnPressed(_ sender: Any) {
-        KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+    @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
