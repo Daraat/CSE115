@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         if KeychainWrapper.standard.hasValue(forKey: KEY_UID){
             print("UID Found in keychain")
-            performSegue(withIdentifier: "TODO", sender: nil)
+            performSegue(withIdentifier: "goToHome", sender: nil)
         }
     }
     
@@ -67,10 +67,12 @@ class ViewController: UIViewController {
         FirebaseAuth.Auth.auth().signIn(withEmail: email, password: password, completion: {result, error in
             if error != nil{
                 print("LOGIN: User login failed")
+                print(error ?? "Error not provided")
                 return
             }else{
+                KeychainWrapper.standard.set((result?.user.uid)!, forKey: KEY_UID)
                 print("SIGNUP: User login succesful")
-                //TODO: perform segue
+                self.performSegue(withIdentifier: "goToHome", sender: nil)
             }
         })
         
@@ -80,6 +82,7 @@ class ViewController: UIViewController {
 
     @IBAction func RegBut(_ sender: Any) {
         performSegue(withIdentifier: "gotoSignUp", sender: nil)
+        
     }
     
     @IBAction func GoogleBut(_ sender: Any) {

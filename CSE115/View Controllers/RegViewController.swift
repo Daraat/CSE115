@@ -8,6 +8,7 @@
 
 import UIKit
 import FirebaseAuth
+import SwiftKeychainWrapper
 class RegViewController: UIViewController {
 
 
@@ -18,6 +19,7 @@ class RegViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //See SignInViewController line 16
         self.hideKeyboardWhenTappedAround()
     
     // Do any additional setup after loading the view.
@@ -27,6 +29,7 @@ class RegViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     @IBAction func regFinal(_ sender: Any) {
+        //TODO: Improve email and password validation
         guard let email = EmailTextField.text, !email.isEmpty,
             let password = PasswordTextField.text, !password.isEmpty,
             let passwordConf = ConfirmPassWordTextField.text, passwordConf == password
@@ -34,13 +37,15 @@ class RegViewController: UIViewController {
                 print("Fields missing data")
                 return
         }
+        //creates user in firebase database
         FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password, completion: {result, error in
             if error != nil{
                 print("SIGNUP: User creation failed")
                 return
             }else{
                 print("SIGNUP: User creation succesful")
-                //TODO: perform segue
+                KeychainWrapper.standard.set((result?.user.uid)!, forKey: KEY_UID)
+                self.dismiss(animated: true, completion: nil)
             }
         })
     }
