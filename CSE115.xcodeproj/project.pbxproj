@@ -14,10 +14,12 @@
 		2866EE2024BABD72003247D1 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2866EE1F24BABD72003247D1 /* TransactionViewController.swift */; };
 		41B9E81158FC4D74FAFAA066 /* Pods_CSE115_CSE115UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D1DDF7EDBF172A5FEB46A4 /* Pods_CSE115_CSE115UITests.framework */; };
 		4788CC7224BFC6D100BC83F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7124BFC6D000BC83F0 /* GoogleService-Info.plist */; };
+		4788CC7424BFD7D800BC83F0 /* icons8-add-camera-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */; };
+		4788CC7624BFD88B00BC83F0 /* icons8-camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7524BFD88A00BC83F0 /* icons8-camera-50.png */; };
 		47E587CB24AAA52600CEA744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CA24AAA52600CEA744 /* AppDelegate.swift */; };
 		47E587CD24AAA52600CEA744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CC24AAA52600CEA744 /* SceneDelegate.swift */; };
 		47E587CF24AAA52600CEA744 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CE24AAA52600CEA744 /* SignInViewController.swift */; };
-		47E587D224AAA52600CEA744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E587D024AAA52600CEA744 /* Main.storyboard */; };
+		47E587D224AAA52600CEA744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E587D024AAA52600CEA744 /* Main.storyboard */; settings = {ASSET_TAGS = ("Return Date", ); }; };
 		47E587D424AAA52700CEA744 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E587D324AAA52700CEA744 /* Assets.xcassets */; };
 		47E587D724AAA52700CEA744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E587D524AAA52700CEA744 /* LaunchScreen.storyboard */; };
 		47E587E224AAA52700CEA744 /* CSE115Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587E124AAA52700CEA744 /* CSE115Tests.swift */; };
@@ -58,6 +60,8 @@
 		2866EE1D24BAABFD003247D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2866EE1F24BABD72003247D1 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		4788CC7124BFC6D000BC83F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-add-camera-100.png"; sourceTree = "<group>"; };
+		4788CC7524BFD88A00BC83F0 /* icons8-camera-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-camera-50.png"; sourceTree = "<group>"; };
 		47E587C724AAA52600CEA744 /* CSE115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSE115.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E587CA24AAA52600CEA744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47E587CC24AAA52600CEA744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -206,10 +210,12 @@
 			isa = PBXGroup;
 			children = (
 				47EF77B724ABEAAB00B2E81E /* icons8-twitter-circled-100.png */,
+				4788CC7524BFD88A00BC83F0 /* icons8-camera-50.png */,
 				47EF77B524ABEA4400B2E81E /* icons8-facebook-150 (1).png */,
 				47EF77B324ABE4EB00B2E81E /* icons8-facebook-150.png */,
 				47EF77B124ABE3CD00B2E81E /* icons8-google-150.png */,
 				47E587FD24AAC27500CEA744 /* Italiana-Regular.ttf */,
+				4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */,
 			);
 			path = "Fonts and icons";
 			sourceTree = "<group>";
@@ -294,6 +300,9 @@
 		47E587BF24AAA52600CEA744 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					"Return Date",
+				);
 				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1150;
 				ORGANIZATIONNAME = "Dara Abedini tafreshi";
@@ -336,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4788CC7424BFD7D800BC83F0 /* icons8-add-camera-100.png in Resources */,
 				47EF77B424ABE4EB00B2E81E /* icons8-facebook-150.png in Resources */,
 				47EF77B624ABEA4400B2E81E /* icons8-facebook-150 (1).png in Resources */,
 				2839389C24BFC18A005D2138 /* GoogleService-Info.plist in Resources */,
@@ -344,6 +354,7 @@
 				47E587D424AAA52700CEA744 /* Assets.xcassets in Resources */,
 				47E587FE24AAC27500CEA744 /* Italiana-Regular.ttf in Resources */,
 				47EF77B824ABEAAB00B2E81E /* icons8-twitter-circled-100.png in Resources */,
+				4788CC7624BFD88B00BC83F0 /* icons8-camera-50.png in Resources */,
 				47E587D224AAA52600CEA744 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
