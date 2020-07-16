@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class TransactionViewController: UIViewController {
+class TransactionViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
     
     
@@ -18,7 +18,14 @@ class TransactionViewController: UIViewController {
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
-    @IBOutlet weak var addPic: UIButton!
+    @IBAction func picTaker(_ sender: Any) {
+        let vc = UIImagePickerController()
+        vc.sourceType = .camera
+        vc.allowsEditing = true
+        vc.delegate = self
+        present(vc, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let datePicker = UIDatePicker()

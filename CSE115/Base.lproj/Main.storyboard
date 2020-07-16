@@ -482,6 +482,9 @@
                                 <state key="normal" image="icons8-camera-50.png">
                                     <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="picTaker:" destination="zZQ-4c-Qpx" eventType="touchUpInside" id="tdF-Dy-cDO"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Return Date" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="naF-ga-w5i">
                                 <rect key="frame" x="50" y="444.66666666666669" width="304" height="34"/>
@@ -537,7 +540,6 @@
                         <viewLayoutGuide key="safeArea" id="k1o-mD-f7u"/>
                     </view>
                     <connections>
-                        <outlet property="addPic" destination="1IW-fN-hTZ" id="IqO-FA-Xfm"/>
                         <outlet property="loanDateText" destination="CvH-y9-9lb" id="AfK-Kh-f1z"/>
                         <outlet property="returnDateText" destination="naF-ga-w5i" id="aK1-Dc-C6W"/>
                     </connections>
