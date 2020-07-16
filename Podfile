@@ -15,6 +15,8 @@ target 'CSE115' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
+  pod 'SwiftKeychainWrapper'
+
 
   target 'CSE115Tests' do
     inherit! :search_paths

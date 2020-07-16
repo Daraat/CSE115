@@ -3,11 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28EE2D8D24ABEB6C0026A4CB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28EE2D8C24ABEB6B0026A4CB /* GoogleService-Info.plist */; };
+		1093DCF05E0C867DA246EC7E /* Pods_CSE115.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F1DA7EE3790E0EA2F809A37 /* Pods_CSE115.framework */; };
+		282FDD7124AF827200392D0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282FDD7024AF827200392D0C /* Constants.swift */; };
+		2866EE1E24BAABFD003247D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2866EE1D24BAABFD003247D1 /* HomeViewController.swift */; };
+		2866EE2024BABD72003247D1 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2866EE1F24BABD72003247D1 /* TransactionViewController.swift */; };
+		41B9E81158FC4D74FAFAA066 /* Pods_CSE115_CSE115UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D1DDF7EDBF172A5FEB46A4 /* Pods_CSE115_CSE115UITests.framework */; };
+		471E312B24B5256400ED37A3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 471E312A24B5256300ED37A3 /* GoogleService-Info.plist */; };
 		47E587CB24AAA52600CEA744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CA24AAA52600CEA744 /* AppDelegate.swift */; };
 		47E587CD24AAA52600CEA744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CC24AAA52600CEA744 /* SceneDelegate.swift */; };
 		47E587CF24AAA52600CEA744 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CE24AAA52600CEA744 /* SignInViewController.swift */; };
@@ -23,6 +28,9 @@
 		47EF77B624ABEA4400B2E81E /* icons8-facebook-150 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 47EF77B524ABEA4400B2E81E /* icons8-facebook-150 (1).png */; };
 		47EF77B824ABEAAB00B2E81E /* icons8-twitter-circled-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 47EF77B724ABEAAB00B2E81E /* icons8-twitter-circled-100.png */; };
 		47EF77BA24ABF50900B2E81E /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EF77B924ABF50900B2E81E /* RegViewController.swift */; };
+		86D6C4327870445279264D48 /* Pods_CSE115Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 001133A2B19EE7BBCC63163F /* Pods_CSE115Tests.framework */; };
+		8C1762EA24B9019C0018E7B8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1762E924B9019C0018E7B8 /* MenuViewController.swift */; };
+		AE76C9A824BFCB69005F944D /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE76C9A724BFCB69005F944D /* UserProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001133A2B19EE7BBCC63163F /* Pods_CSE115Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSE115Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0690DD257DFFCF99AE573240 /* Pods-CSE115.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSE115.release.xcconfig"; path = "Target Support Files/Pods-CSE115/Pods-CSE115.release.xcconfig"; sourceTree = "<group>"; };
-		28EE2D8C24ABEB6B0026A4CB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1055634C66D0C5E6AE5B4E34 /* Pods-CSE115-CSE115UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSE115-CSE115UITests.debug.xcconfig"; path = "Target Support Files/Pods-CSE115-CSE115UITests/Pods-CSE115-CSE115UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		282FDD7024AF827200392D0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2866EE1D24BAABFD003247D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2866EE1F24BABD72003247D1 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
+		471E312A24B5256300ED37A3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "CSE115/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		47E587C724AAA52600CEA744 /* CSE115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSE115.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E587CA24AAA52600CEA744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47E587CC24AAA52600CEA744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +79,14 @@
 		47EF77B524ABEA4400B2E81E /* icons8-facebook-150 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-facebook-150 (1).png"; sourceTree = "<group>"; };
 		47EF77B724ABEAAB00B2E81E /* icons8-twitter-circled-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-twitter-circled-100.png"; sourceTree = "<group>"; };
 		47EF77B924ABF50900B2E81E /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
+		48655168947386B9F5D04F8F /* Pods-CSE115Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSE115Tests.debug.xcconfig"; path = "Target Support Files/Pods-CSE115Tests/Pods-CSE115Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C09D20D75F7A5EED577369E /* Pods-CSE115Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSE115Tests.release.xcconfig"; path = "Target Support Files/Pods-CSE115Tests/Pods-CSE115Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8C1762E924B9019C0018E7B8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		9F1DA7EE3790E0EA2F809A37 /* Pods_CSE115.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSE115.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE76C9A724BFCB69005F944D /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		C27DDB5F929D8F1F004E5981 /* Pods-CSE115.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSE115.debug.xcconfig"; path = "Target Support Files/Pods-CSE115/Pods-CSE115.debug.xcconfig"; sourceTree = "<group>"; };
+		E3D1DDF7EDBF172A5FEB46A4 /* Pods_CSE115_CSE115UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSE115_CSE115UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E43140EA6E15396B3BD10255 /* Pods-CSE115-CSE115UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSE115-CSE115UITests.release.xcconfig"; path = "Target Support Files/Pods-CSE115-CSE115UITests/Pods-CSE115-CSE115UITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7043886EF5ECD984CDDFB90B /* Pods_CSE115.framework in Frameworks */,
+				1093DCF05E0C867DA246EC7E /* Pods_CSE115.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE42905037A24BBC7173A77E /* Pods_CSE115Tests.framework in Frameworks */,
+				86D6C4327870445279264D48 /* Pods_CSE115Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83C2EBA6158067C6ED4C06EF /* Pods_CSE115_CSE115UITests.framework in Frameworks */,
+				41B9E81158FC4D74FAFAA066 /* Pods_CSE115_CSE115UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,11 +120,31 @@
 		139D0FF94D8CC5CE34D38B7B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8F0DCDC10F81211CFB10DE04 /* Pods_CSE115.framework */,
-				63DFD240E15D45E450D6EFD4 /* Pods_CSE115_CSE115UITests.framework */,
-				FF3B977C58434F1E853CB657 /* Pods_CSE115Tests.framework */,
+				9F1DA7EE3790E0EA2F809A37 /* Pods_CSE115.framework */,
+				E3D1DDF7EDBF172A5FEB46A4 /* Pods_CSE115_CSE115UITests.framework */,
+				001133A2B19EE7BBCC63163F /* Pods_CSE115Tests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		282FDD6F24AF825500392D0C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				282FDD7024AF827200392D0C /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		282FDD7624AFE72900392D0C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				47EF77B924ABF50900B2E81E /* RegViewController.swift */,
+				47E587CE24AAA52600CEA744 /* SignInViewController.swift */,
+				2866EE1D24BAABFD003247D1 /* HomeViewController.swift */,
+				2866EE1F24BABD72003247D1 /* TransactionViewController.swift */,
+				AE76C9A724BFCB69005F944D /* UserProfileViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		47E587BE24AAA52600CEA744 = {
@@ -115,6 +156,7 @@
 				47E587C824AAA52600CEA744 /* Products */,
 				B73581CC028994E91B864679 /* Pods */,
 				139D0FF94D8CC5CE34D38B7B /* Frameworks */,
+				AE76C9A624BFBF6C005F944D /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,16 +173,16 @@
 		47E587C924AAA52600CEA744 /* CSE115 */ = {
 			isa = PBXGroup;
 			children = (
+				471E312A24B5256300ED37A3 /* GoogleService-Info.plist */,
+				282FDD7624AFE72900392D0C /* View Controllers */,
+				282FDD6F24AF825500392D0C /* Utils */,
 				47E587FC24AAC21C00CEA744 /* Fonts and icons */,
 				47E587CA24AAA52600CEA744 /* AppDelegate.swift */,
 				47E587CC24AAA52600CEA744 /* SceneDelegate.swift */,
-				47E587CE24AAA52600CEA744 /* SignInViewController.swift */,
-				47EF77B924ABF50900B2E81E /* RegViewController.swift */,
 				47E587D024AAA52600CEA744 /* Main.storyboard */,
 				47E587D324AAA52700CEA744 /* Assets.xcassets */,
 				47E587D524AAA52700CEA744 /* LaunchScreen.storyboard */,
 				47E587D824AAA52700CEA744 /* Info.plist */,
-				28EE2D8C24ABEB6B0026A4CB /* GoogleService-Info.plist */,
 				47E587FA24AABAA900CEA744 /* CustomBut.swift */,
 			);
 			path = CSE115;
@@ -176,17 +218,24 @@
 			path = "Fonts and icons";
 			sourceTree = "<group>";
 		};
+		AE76C9A624BFBF6C005F944D /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				8C1762E924B9019C0018E7B8 /* MenuViewController.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		B73581CC028994E91B864679 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				61F183F3EF9710067B5023C2 /* Pods-CSE115.debug.xcconfig */,
 				0690DD257DFFCF99AE573240 /* Pods-CSE115.release.xcconfig */,
-				86836B0673658C1DF30883F2 /* Pods-CSE115-CSE115UITests.debug.xcconfig */,
-				E157026CEA3F59A90DC28D90 /* Pods-CSE115-CSE115UITests.release.xcconfig */,
-				FA30E127E174688F5BE35474 /* Pods-CSE115Tests.debug.xcconfig */,
-				AFB73EB8F8B618EB0AA3D372 /* Pods-CSE115Tests.release.xcconfig */,
+				C27DDB5F929D8F1F004E5981 /* Pods-CSE115.debug.xcconfig */,
+				1055634C66D0C5E6AE5B4E34 /* Pods-CSE115-CSE115UITests.debug.xcconfig */,
+				E43140EA6E15396B3BD10255 /* Pods-CSE115-CSE115UITests.release.xcconfig */,
+				48655168947386B9F5D04F8F /* Pods-CSE115Tests.debug.xcconfig */,
+				4C09D20D75F7A5EED577369E /* Pods-CSE115Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -301,6 +350,7 @@
 			files = (
 				47EF77B424ABE4EB00B2E81E /* icons8-facebook-150.png in Resources */,
 				47EF77B624ABEA4400B2E81E /* icons8-facebook-150 (1).png in Resources */,
+				471E312B24B5256400ED37A3 /* GoogleService-Info.plist in Resources */,
 				47EF77B224ABE3CD00B2E81E /* icons8-google-150.png in Resources */,
 				47E587D724AAA52700CEA744 /* LaunchScreen.storyboard in Resources */,
 				47E587D424AAA52700CEA744 /* Assets.xcassets in Resources */,
@@ -435,10 +485,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				47E587FB24AABAA900CEA744 /* CustomBut.swift in Sources */,
+				AE76C9A824BFCB69005F944D /* UserProfileViewController.swift in Sources */,
 				47E587CF24AAA52600CEA744 /* SignInViewController.swift in Sources */,
 				47EF77BA24ABF50900B2E81E /* RegViewController.swift in Sources */,
+				8C1762EA24B9019C0018E7B8 /* MenuViewController.swift in Sources */,
 				47E587CB24AAA52600CEA744 /* AppDelegate.swift in Sources */,
 				47E587CD24AAA52600CEA744 /* SceneDelegate.swift in Sources */,
+				2866EE1E24BAABFD003247D1 /* HomeViewController.swift in Sources */,
+				282FDD7124AF827200392D0C /* Constants.swift in Sources */,
+				2866EE2024BABD72003247D1 /* TransactionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,10 +664,11 @@
 		};
 		47E587F224AAA52700CEA744 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 61F183F3EF9710067B5023C2 /* Pods-CSE115.debug.xcconfig */;
+			baseConfigurationReference = C27DDB5F929D8F1F004E5981 /* Pods-CSE115.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CSE115/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -631,6 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7C9K7YBV9L;
 				INFOPLIST_FILE = CSE115/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -645,7 +702,7 @@
 		};
 		47E587F524AAA52700CEA744 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA30E127E174688F5BE35474 /* Pods-CSE115Tests.debug.xcconfig */;
+			baseConfigurationReference = 48655168947386B9F5D04F8F /* Pods-CSE115Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -667,7 +724,7 @@
 		};
 		47E587F624AAA52700CEA744 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFB73EB8F8B618EB0AA3D372 /* Pods-CSE115Tests.release.xcconfig */;
+			baseConfigurationReference = 4C09D20D75F7A5EED577369E /* Pods-CSE115Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -689,7 +746,7 @@
 		};
 		47E587F824AAA52700CEA744 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86836B0673658C1DF30883F2 /* Pods-CSE115-CSE115UITests.debug.xcconfig */;
+			baseConfigurationReference = 1055634C66D0C5E6AE5B4E34 /* Pods-CSE115-CSE115UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -709,7 +766,7 @@
 		};
 		47E587F924AAA52700CEA744 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E157026CEA3F59A90DC28D90 /* Pods-CSE115-CSE115UITests.release.xcconfig */;
+			baseConfigurationReference = E43140EA6E15396B3BD10255 /* Pods-CSE115-CSE115UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
