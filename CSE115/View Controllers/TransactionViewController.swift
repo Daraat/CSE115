@@ -18,6 +18,7 @@ class TransactionViewController: UIViewController {
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    @IBOutlet weak var addPic: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         let datePicker = UIDatePicker()
@@ -34,7 +35,13 @@ class TransactionViewController: UIViewController {
         let formatter  = DateFormatter()
         formatter.dateStyle = DateFormatter.Style.medium
         formatter.timeStyle = DateFormatter.Style.none
-        loanDateText.text = formatter.string(from: sender.date)
+        if(loanDateText.isEditing){
+            loanDateText.text = formatter.string(from: sender.date)
+        }
+        else{
         returnDateText.text = formatter.string(from: sender.date)
+        }
 }
+    
+    
 }
