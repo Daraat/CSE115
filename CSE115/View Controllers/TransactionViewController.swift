@@ -26,7 +26,8 @@ class TransactionViewController: UIViewController {
         datePicker.addTarget(self, action: #selector(TransactionViewController.datePickerValueChanged(sender:)), for: UIControl.Event.valueChanged)
         loanDateText.inputView = datePicker
         returnDateText.inputView = datePicker
-        
+        let gestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(backgroundTap(gesture:)));
+        view.addGestureRecognizer(gestureRecognizer)
     }
     
     
@@ -42,6 +43,9 @@ class TransactionViewController: UIViewController {
         returnDateText.text = formatter.string(from: sender.date)
         }
 }
-    
+    @objc func backgroundTap(gesture : UITapGestureRecognizer) {
+           returnDateText.resignFirstResponder()
+           loanDateText.resignFirstResponder()
+       }
     
 }
