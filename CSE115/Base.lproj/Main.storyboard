@@ -281,6 +281,82 @@
             </objects>
             <point key="canvasLocation" x="960.86956521739137" y="137.94642857142856"/>
         </scene>
+        <!--Help View Controller-->
+        <scene sceneID="xBe-ie-RGZ">
+            <objects>
+                <viewController id="w6P-nI-Pcu" customClass="HelpViewController" customModule="CSE115" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IV1-av-rrm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lW-mB-4vn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4FY-8Z-qkK">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEe-Oy-Ron">
+                                        <rect key="frame" x="12" y="175" width="390" height="352"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">⦿To add a new item:        •Click on the + on the main page.                                        •Fill out the information and take a picture of your item.                                       •Click on Add and your item will be saved.</string>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" name="Italiana-Regular" family="Italiana" pointSize="31"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOANR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeX-ub-CP4">
+                                        <rect key="frame" x="97" y="19" width="220" height="71"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="Lpg-J2-HOP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Italiana-Regular" family="Italiana" pointSize="60"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="eeX-ub-CP4" secondAttribute="bottom" constant="699" id="1hf-gX-joq"/>
+                                    <constraint firstItem="eeX-ub-CP4" firstAttribute="leading" secondItem="0lW-mB-4vn" secondAttribute="leading" constant="97" id="2JU-e3-fTw"/>
+                                    <constraint firstItem="lEe-Oy-Ron" firstAttribute="top" secondItem="eeX-ub-CP4" secondAttribute="bottom" constant="85" id="EFG-he-yzy"/>
+                                    <constraint firstAttribute="trailing" secondItem="eeX-ub-CP4" secondAttribute="trailing" constant="97" id="Ijt-Xy-Flz"/>
+                                    <constraint firstItem="lEe-Oy-Ron" firstAttribute="leading" secondItem="0lW-mB-4vn" secondAttribute="leading" constant="12" id="N9C-IJ-fdx"/>
+                                    <constraint firstAttribute="bottom" secondItem="lEe-Oy-Ron" secondAttribute="bottom" constant="262" id="cXR-9q-674"/>
+                                    <constraint firstItem="eeX-ub-CP4" firstAttribute="centerX" secondItem="0lW-mB-4vn" secondAttribute="centerX" id="f05-of-Jng"/>
+                                    <constraint firstItem="eeX-ub-CP4" firstAttribute="top" secondItem="0lW-mB-4vn" secondAttribute="top" constant="19" id="fy6-Df-iTu"/>
+                                    <constraint firstAttribute="trailing" secondItem="lEe-Oy-Ron" secondAttribute="trailing" constant="12" id="pJJ-Ns-TDD"/>
+                                </constraints>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="ocQ-CB-Ebb">
+                                <rect key="frame" x="187" y="773" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Uf3-Rc-z8c"/>
+                                    <constraint firstAttribute="width" constant="40" id="huT-9B-7g1"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="0lW-mB-4vn" firstAttribute="bottom" secondItem="rsW-iB-vml" secondAttribute="bottom" id="L2Z-oW-Jjo"/>
+                            <constraint firstItem="rsW-iB-vml" firstAttribute="bottom" secondItem="ocQ-CB-Ebb" secondAttribute="bottom" constant="49" id="OdK-Pn-xKv"/>
+                            <constraint firstItem="ocQ-CB-Ebb" firstAttribute="centerX" secondItem="rsW-iB-vml" secondAttribute="centerX" id="QWQ-eX-VUH"/>
+                            <constraint firstItem="0lW-mB-4vn" firstAttribute="top" secondItem="rsW-iB-vml" secondAttribute="top" id="ffW-Vk-nMC"/>
+                            <constraint firstItem="0lW-mB-4vn" firstAttribute="leading" secondItem="rsW-iB-vml" secondAttribute="leading" id="kiq-5U-pu1"/>
+                            <constraint firstItem="0lW-mB-4vn" firstAttribute="trailing" secondItem="rsW-iB-vml" secondAttribute="trailing" id="lvW-RD-UA1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rsW-iB-vml"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="ocQ-CB-Ebb" id="CMi-vz-HiU"/>
+                        <outlet property="scrollView" destination="0lW-mB-4vn" id="vTn-Ag-piU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1i-B0-Xvw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-200.00000000000003" y="867.85714285714278"/>
+        </scene>
         <!--Home View Controller-->
         <scene sceneID="GnD-o5-YXU">
             <objects>
