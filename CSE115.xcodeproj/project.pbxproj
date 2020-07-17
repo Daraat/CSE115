@@ -14,14 +14,11 @@
 		2866EE2024BABD72003247D1 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2866EE1F24BABD72003247D1 /* TransactionViewController.swift */; };
 		287D0E5E24C2609300D68637 /* FancyMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0E5D24C2609300D68637 /* FancyMenuButton.swift */; };
 		41B9E81158FC4D74FAFAA066 /* Pods_CSE115_CSE115UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D1DDF7EDBF172A5FEB46A4 /* Pods_CSE115_CSE115UITests.framework */; };
-<<<<<<< Updated upstream
-=======
 		476B3FCF24C25DAE00F086FD /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B3FCE24C25DAE00F086FD /* profileViewController.swift */; };
 		476B3FD124C2625700F086FD /* profileCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B3FD024C2625700F086FD /* profileCustom.swift */; };
-		4788CC7224BFC6D100BC83F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7124BFC6D000BC83F0 /* GoogleService-Info.plist */; };
->>>>>>> Stashed changes
 		4788CC7424BFD7D800BC83F0 /* icons8-add-camera-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */; };
 		4788CC7624BFD88B00BC83F0 /* icons8-camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7524BFD88A00BC83F0 /* icons8-camera-50.png */; };
+		479B49BA24C26F250095A864 /* CustomBut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B49B924C26F250095A864 /* CustomBut.swift */; };
 		47E587CB24AAA52600CEA744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CA24AAA52600CEA744 /* AppDelegate.swift */; };
 		47E587CD24AAA52600CEA744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CC24AAA52600CEA744 /* SceneDelegate.swift */; };
 		47E587CF24AAA52600CEA744 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CE24AAA52600CEA744 /* SignInViewController.swift */; };
@@ -30,7 +27,6 @@
 		47E587D724AAA52700CEA744 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E587D524AAA52700CEA744 /* LaunchScreen.storyboard */; };
 		47E587E224AAA52700CEA744 /* CSE115Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587E124AAA52700CEA744 /* CSE115Tests.swift */; };
 		47E587ED24AAA52700CEA744 /* CSE115UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587EC24AAA52700CEA744 /* CSE115UITests.swift */; };
-		47E587FB24AABAA900CEA744 /* CustomBut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587FA24AABAA900CEA744 /* CustomBut.swift */; };
 		47E587FE24AAC27500CEA744 /* Italiana-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 47E587FD24AAC27500CEA744 /* Italiana-Regular.ttf */; };
 		47EF77B224ABE3CD00B2E81E /* icons8-google-150.png in Resources */ = {isa = PBXBuildFile; fileRef = 47EF77B124ABE3CD00B2E81E /* icons8-google-150.png */; };
 		47EF77B424ABE4EB00B2E81E /* icons8-facebook-150.png in Resources */ = {isa = PBXBuildFile; fileRef = 47EF77B324ABE4EB00B2E81E /* icons8-facebook-150.png */; };
@@ -67,15 +63,12 @@
 		2839389B24BFC189005D2138 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2866EE1D24BAABFD003247D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2866EE1F24BABD72003247D1 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
 		287D0E5D24C2609300D68637 /* FancyMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyMenuButton.swift; sourceTree = "<group>"; };
-=======
 		476B3FCE24C25DAE00F086FD /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		476B3FD024C2625700F086FD /* profileCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileCustom.swift; sourceTree = "<group>"; };
-		4788CC7124BFC6D000BC83F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
->>>>>>> Stashed changes
 		4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-add-camera-100.png"; sourceTree = "<group>"; };
 		4788CC7524BFD88A00BC83F0 /* icons8-camera-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-camera-50.png"; sourceTree = "<group>"; };
+		479B49B924C26F250095A864 /* CustomBut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBut.swift; sourceTree = "<group>"; };
 		47E587C724AAA52600CEA744 /* CSE115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSE115.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E587CA24AAA52600CEA744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47E587CC24AAA52600CEA744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,7 +83,6 @@
 		47E587E824AAA52700CEA744 /* CSE115UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSE115UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E587EC24AAA52700CEA744 /* CSE115UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSE115UITests.swift; sourceTree = "<group>"; };
 		47E587EE24AAA52700CEA744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		47E587FA24AABAA900CEA744 /* CustomBut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBut.swift; sourceTree = "<group>"; };
 		47E587FD24AAC27500CEA744 /* Italiana-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Italiana-Regular.ttf"; sourceTree = "<group>"; };
 		47EF77B124ABE3CD00B2E81E /* icons8-google-150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-google-150.png"; sourceTree = "<group>"; };
 		47EF77B324ABE4EB00B2E81E /* icons8-facebook-150.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-facebook-150.png"; sourceTree = "<group>"; };
@@ -169,8 +161,8 @@
 		287D0E5C24C2606A00D68637 /* Custom View */ = {
 			isa = PBXGroup;
 			children = (
-				47E587FA24AABAA900CEA744 /* CustomBut.swift */,
 				287D0E5D24C2609300D68637 /* FancyMenuButton.swift */,
+				479B49B924C26F250095A864 /* CustomBut.swift */,
 			);
 			path = "Custom View";
 			sourceTree = "<group>";
@@ -211,11 +203,7 @@
 				47E587D324AAA52700CEA744 /* Assets.xcassets */,
 				47E587D524AAA52700CEA744 /* LaunchScreen.storyboard */,
 				47E587D824AAA52700CEA744 /* Info.plist */,
-<<<<<<< Updated upstream
-=======
-				47E587FA24AABAA900CEA744 /* CustomBut.swift */,
 				476B3FD024C2625700F086FD /* profileCustom.swift */,
->>>>>>> Stashed changes
 			);
 			path = CSE115;
 			sourceTree = "<group>";
@@ -517,7 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47E587FB24AABAA900CEA744 /* CustomBut.swift in Sources */,
+				479B49BA24C26F250095A864 /* CustomBut.swift in Sources */,
 				47E587CF24AAA52600CEA744 /* SignInViewController.swift in Sources */,
 				287D0E5E24C2609300D68637 /* FancyMenuButton.swift in Sources */,
 				47EF77BA24ABF50900B2E81E /* RegViewController.swift in Sources */,
