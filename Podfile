@@ -16,7 +16,7 @@ target 'CSE115' do
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
   pod 'SwiftKeychainWrapper'
-
+  pod 'SideMenu'
 
   target 'CSE115Tests' do
     inherit! :search_paths

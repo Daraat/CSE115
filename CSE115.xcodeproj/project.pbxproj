@@ -13,7 +13,6 @@
 		2866EE1E24BAABFD003247D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2866EE1D24BAABFD003247D1 /* HomeViewController.swift */; };
 		2866EE2024BABD72003247D1 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2866EE1F24BABD72003247D1 /* TransactionViewController.swift */; };
 		41B9E81158FC4D74FAFAA066 /* Pods_CSE115_CSE115UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D1DDF7EDBF172A5FEB46A4 /* Pods_CSE115_CSE115UITests.framework */; };
-		4788CC7224BFC6D100BC83F0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7124BFC6D000BC83F0 /* GoogleService-Info.plist */; };
 		4788CC7424BFD7D800BC83F0 /* icons8-add-camera-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */; };
 		4788CC7624BFD88B00BC83F0 /* icons8-camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7524BFD88A00BC83F0 /* icons8-camera-50.png */; };
 		47E587CB24AAA52600CEA744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CA24AAA52600CEA744 /* AppDelegate.swift */; };
@@ -59,7 +58,6 @@
 		2839389B24BFC189005D2138 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2866EE1D24BAABFD003247D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2866EE1F24BABD72003247D1 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
-		4788CC7124BFC6D000BC83F0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-add-camera-100.png"; sourceTree = "<group>"; };
 		4788CC7524BFD88A00BC83F0 /* icons8-camera-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-camera-50.png"; sourceTree = "<group>"; };
 		47E587C724AAA52600CEA744 /* CSE115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSE115.app; sourceTree = BUILT_PRODUCTS_DIR; };
