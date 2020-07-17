@@ -9,12 +9,23 @@
 import UIKit
 import Firebase
 import SwiftKeychainWrapper
-
+import SideMenu
 
 class HomeViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        SideMenuManager.default.addPanGestureToPresent(toView: self.view)
+        
+        
+    }
+    
+    
     @IBAction func logOutBtnPressed(_ sender: Any) {
         KeychainWrapper.standard.removeObject(forKey: KEY_UID)
-        dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+
     }
     
     

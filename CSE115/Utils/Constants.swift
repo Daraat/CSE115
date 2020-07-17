@@ -6,6 +6,8 @@
 //  Copyright © 2020 Dara Abedini tafreshi. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 let KEY_UID = "uid"
+
+let SHADOW_GRAY : CGFloat = 120.0 / 255.0
