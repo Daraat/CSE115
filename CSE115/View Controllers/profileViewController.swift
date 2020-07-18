@@ -13,12 +13,14 @@ import UIKit
 class profileViewController: UIViewController{
     
     
+   
+
+    @IBAction func Backbut(_ sender: Any) {
+          dismiss(animated: true, completion: nil)
+    }
     
     
-    
-    
-    @IBOutlet weak var profilePic: UIImageView!
-    
+    @IBOutlet weak var profileP: UIImageView!
     
     
     
@@ -26,7 +28,7 @@ class profileViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profilePic.makeRound()
+        profileP.makeRound()
         
         
         
