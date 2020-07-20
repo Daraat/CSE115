@@ -7,17 +7,21 @@
 //
 
 import UIKit
-import Firebase
+import FirebaseDatabase
 
 class TransactionViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
     
     
+    @IBOutlet weak var ItemTextField: UITextField!
+    @IBOutlet weak var friendSearchField: UITextField!
     @IBOutlet weak var returnDateText: UITextField!
     @IBOutlet weak var loanDateText: UITextField!
+    
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
     @IBAction func picTaker(_ sender: Any) {
         let vc = UIImagePickerController()
         vc.sourceType = .camera
@@ -54,5 +58,8 @@ class TransactionViewController: UIViewController, UIImagePickerControllerDelega
            returnDateText.resignFirstResponder()
            loanDateText.resignFirstResponder()
        }
+    @IBAction func addButtonPressed(_ sender: Any) {
+        
+    }
     
 }

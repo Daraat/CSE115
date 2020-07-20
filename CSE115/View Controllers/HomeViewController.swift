@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
         
     }
     
-    
+
     @IBAction func logOutBtnPressed(_ sender: Any) {
         KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         //dismiss(animated: true, completion: nil)

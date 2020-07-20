@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passTxt: UITextField!
+    @IBOutlet var errorMsg: UILabel!
     
     
     let backgroundImageView = UIImageView()
@@ -68,6 +69,10 @@ class ViewController: UIViewController {
             if error != nil{
                 print("LOGIN: User login failed")
                 print(error ?? "Error not provided")
+                self.errorMsg.text = "Invalid login information"
+                UIView.animate(withDuration: 0.5){
+                    self.errorMsg.alpha = 1.0
+                }
                 return
             }else{
                 KeychainWrapper.standard.set((result?.user.uid)!, forKey: KEY_UID)
