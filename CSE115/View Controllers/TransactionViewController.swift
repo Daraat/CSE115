@@ -18,6 +18,7 @@ class TransactionViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var returnDateText: UITextField!
     @IBOutlet weak var loanDateText: UITextField!
     
+    var pic : UIImage!
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -28,6 +29,22 @@ class TransactionViewController: UIViewController, UIImagePickerControllerDelega
         vc.allowsEditing = true
         vc.delegate = self
         present(vc, animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        var newImage: UIImage
+
+        if let possibleImage = info[.editedImage] as? UIImage {
+            newImage = possibleImage
+        } else if let possibleImage = info[.originalImage] as? UIImage {
+            newImage = possibleImage
+        } else {
+            return
+        }
+
+        pic = newImage
+
+        dismiss(animated: true)
     }
     
     override func viewDidLoad() {
