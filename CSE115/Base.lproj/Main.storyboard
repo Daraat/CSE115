@@ -443,10 +443,10 @@
             </objects>
             <point key="canvasLocation" x="-204.34782608695653" y="1591.7410714285713"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Menu View Controller-->
         <scene sceneID="rO5-7s-1id">
             <objects>
-                <viewController storyboardIdentifier="menuVC" id="qNw-Ep-6wS" customClass="HomeViewController" customModule="CSE115" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menuVC" id="qNw-Ep-6wS" customClass="MenuViewController" customModule="CSE115" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tv3-WY-0IL">
                         <rect key="frame" x="0.0" y="0.0" width="250" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -558,6 +558,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="Sog-zA-VaM"/>
                     <size key="freeformSize" width="250" height="896"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="wkG-6C-KJe" id="yl2-3L-duY"/>
+                        <outlet property="profilePic" destination="jdD-MY-X5l" id="3Bo-I8-ecu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1HQ-Ws-kP1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
