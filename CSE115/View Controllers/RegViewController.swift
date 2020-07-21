@@ -37,7 +37,7 @@ class RegViewController: UIViewController {
             let password = PasswordTextField.text, !password.isEmpty,
             let passwordConf = ConfirmPassWordTextField.text, passwordConf == password
             else{
-                errorMsg.text = "Please make sure you fill the fields correctly"
+                errorMsg.text = "Please make sure your info is correct"
                 UIView.animate(withDuration: 0.5){
                     self.errorMsg.alpha = 1.0
                 }

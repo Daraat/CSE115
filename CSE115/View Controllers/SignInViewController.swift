@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     let backgroundImageView = UIImageView()
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.errorMsg.alpha = 0
         self.hideKeyboardWhenTappedAround()
         setBackgound()
         // Do any additional setup after loading the view.

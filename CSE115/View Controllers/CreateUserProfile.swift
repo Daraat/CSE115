@@ -37,6 +37,8 @@ class CreateUserProfile : UIViewController, UIImagePickerControllerDelegate & UI
     override func viewDidLoad() {
         fieldsErrMsg.alpha = 0.0
         handleErrMsg.alpha = 0.0
+        profilePic.makeRound()
+        
         userData["email"] = Auth.auth().currentUser?.email
     }
     
@@ -69,7 +71,7 @@ class CreateUserProfile : UIViewController, UIImagePickerControllerDelegate & UI
         }
 
         profilePic.image = newImage
-
+        
         dismiss(animated: true)
     }
 
