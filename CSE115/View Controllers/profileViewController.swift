@@ -13,11 +13,10 @@ import UIKit
 class profileViewController: UIViewController{
     
     
-    @IBOutlet weak var nameTag: UILabel!
-    @IBOutlet weak var lastNameTag: UILabel!
 
+    @IBOutlet weak var nameTag: UILabel!
     @IBOutlet weak var transactionTag: UILabel!
-    
+    @IBOutlet weak var lastNameTag: UILabel!
     @IBAction func Backbut(_ sender: Any) {
           dismiss(animated: true, completion: nil)
     }
