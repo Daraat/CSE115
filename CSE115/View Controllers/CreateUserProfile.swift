@@ -118,14 +118,23 @@ class CreateUserProfile : UIViewController, UIImagePickerControllerDelegate & UI
             uploadProfilePicToFireStore()
             //Checks if the handle is available
             let handle = self.handleData
+            if(handle.rangeOfCharacter(from: CharacterSet.whitespacesAndNewlines) != nil){
+                handleErrMsg.text = "Whitespaces are not allowed in handle"
+                UIView.animate(withDuration: 0.5){
+                    self.handleErrMsg.alpha = 1.0
+                }
+                return
+            }
             databaseRef.child("users").observeSingleEvent(of: .value, with: { (snapshot) in
                 if snapshot.hasChild(handle){
+                    self.handleErrMsg.text = "This handle is taken. Please choose another one"
                     UIView.animate(withDuration: 0.5){
                         self.handleErrMsg.alpha = 1.0
                     }
                 }
                 else{
                     self.databaseRef.child("users").child(handle).setValue(self.userData)
+                    self.databaseRef.child("userHandlesByID").child(Auth.auth().currentUser!.uid).setValue(handle)
                     print("Success, user profile created.")
                     self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
                     
