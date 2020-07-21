@@ -79,7 +79,7 @@ class TransactionViewController: UIViewController, UIImagePickerControllerDelega
     }
     @IBAction func searchUser(_ sender: Any) {
         isUserFound()
-    }    
+            }
     
     func isUserFound(){
         var handle = friendSearchField.text!
