@@ -12,7 +12,6 @@ target 'CSE115' do
   # add pods for any other desired Firebase products
   # https://firebase.google.com/docs/ios/setup#available-pods
   pod 'Firebase/Auth'
-  pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
   pod 'SwiftKeychainWrapper'

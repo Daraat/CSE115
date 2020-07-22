@@ -12,7 +12,6 @@ import UIKit
 extension UIImageView {
 
     func makeRound() {
-
         self.layer.borderColor = UIColor.black.cgColor
         self.layer.cornerRadius = self.frame.size.width  / 2
         self.clipsToBounds = true
