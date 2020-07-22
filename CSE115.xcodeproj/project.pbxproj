@@ -169,6 +169,7 @@
 			children = (
 				287D0E5D24C2609300D68637 /* FancyMenuButton.swift */,
 				479B49B924C26F250095A864 /* CustomBut.swift */,
+				476B3FD024C2625700F086FD /* profileCustom.swift */,
 			);
 			path = "Custom View";
 			sourceTree = "<group>";
@@ -209,7 +210,6 @@
 				47E587D324AAA52700CEA744 /* Assets.xcassets */,
 				47E587D524AAA52700CEA744 /* LaunchScreen.storyboard */,
 				47E587D824AAA52700CEA744 /* Info.plist */,
-				476B3FD024C2625700F086FD /* profileCustom.swift */,
 			);
 			path = CSE115;
 			sourceTree = "<group>";
@@ -699,13 +699,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5V3989G93A;
 				INFOPLIST_FILE = CSE115/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cse115.CSE115;
+				PRODUCT_BUNDLE_IDENTIFIER = "cse115.CSE115-loanr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -718,13 +718,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 5V3989G93A;
 				INFOPLIST_FILE = CSE115/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cse115.CSE115;
+				PRODUCT_BUNDLE_IDENTIFIER = "cse115.CSE115-loanr";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

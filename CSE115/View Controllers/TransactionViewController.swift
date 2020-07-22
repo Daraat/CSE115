@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import FirebaseDatabase
+import Firebase
 import SwiftKeychainWrapper
 
 class TransactionViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
@@ -20,16 +20,23 @@ class TransactionViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var loanDateText: UITextField!
     @IBOutlet weak var userNotFoundLabel: UILabel!
     
+    @IBOutlet weak var addPicBtn: UIButton!
+    @IBOutlet weak var addPicBtnLeftconstraint: NSLayoutConstraint!
+    @IBOutlet weak var addPicBtnHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var addPicBtnRightConstraint: NSLayoutConstraint!
+    
+    
     let dbRef = Database.database().reference()
+    let storageRef = Storage.storage().reference()
     
     var usrFound = false
-    var pic : UIImage!
     var data :Dictionary<String, Any> = [
         "loanerHandle" : "",
         "loaneeHandle" : "",
         "itemName" : "",
         "loanDate" : "",
         "returnDate":"",
+        "imgPath" : "",
         "owner" : true
     ]
     
@@ -44,25 +51,27 @@ class TransactionViewController: UIViewController, UIImagePickerControllerDelega
         vc.allowsEditing = true
         vc.delegate = self
         present(vc, animated: true)
+        
+        addPicBtnLeftconstraint.constant = 79
+        addPicBtnRightConstraint.constant = 89
+        addPicBtnHeightConstraint.constant = 246
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        var newImage: UIImage
+        picker.dismiss(animated: true)
 
-        if let possibleImage = info[.editedImage] as? UIImage {
-            newImage = possibleImage
-        } else if let possibleImage = info[.originalImage] as? UIImage {
-            newImage = possibleImage
-        } else {
+        guard let image = info[.editedImage] as? UIImage else {
+            print("No image found")
             return
         }
 
-        pic = newImage
-        dismiss(animated: true)
+        // print out the image size as a test
+        addPicBtn.setImage(image, for: .normal)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
         userNotFoundLabel.alpha = 0
         let datePicker = UIDatePicker()
         datePicker.datePickerMode = UIDatePicker.Mode.date
@@ -161,10 +170,25 @@ class TransactionViewController: UIViewController, UIImagePickerControllerDelega
             let transID = dbRef.child("users").child(data["loanerHandle"] as! String).child("transactions").childByAutoId().key!
             dbRef.child("users").child(data["loanerHandle"] as! String).child("transactions").child(transID).setValue(self.data)
             
+            //get jpegData to be uploaded
+            guard let pic = addPicBtn.image(for: .normal)!.jpegData(compressionQuality: 10.0) else {
+                    print("UPLDPROFPIC: error in getting jpegData")
+                return
+            }
+            
+            let pathish = ((self.data["loanerHandle"]  as! String) + (self.data["loaneeHandle"]  as! String) + (self.data["itemName"]  as! String) + ".jpg")
+            //creates a reference to the image in firebase storage
+            let itemPicRef = storageRef.child("TransactionItems/").child(pathish)
+            
+//            uploads the image
+            itemPicRef.putData(pic, metadata: nil)
+            self.data["imgPath"] = itemPicRef.fullPath
+
             data["owner"] = false
             dbRef.child("users").child(data["loaneeHandle"] as! String).child("transactions").child(transID).setValue(data)
             print("transaction succesfully created")
             self.dismiss(animated: true, completion: nil)
+            
         }
         
     }

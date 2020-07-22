@@ -33,6 +33,8 @@ class ViewController: UIViewController {
     
     
     let backgroundImageView = UIImageView()
+    let dbRef = Database.database().reference(withPath: "userHandlesByID")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.errorMsg.alpha = 0
@@ -43,6 +45,14 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         if KeychainWrapper.standard.hasValue(forKey: KEY_UID){
+            let uid = String(decoding: KeychainWrapper.standard.data(forKey: KEY_UID)!, as: UTF8.self)
+            dbRef.observeSingleEvent(of: .value, with: { (snapshot) in
+                if(!snapshot.hasChild(uid)){
+                    Auth.auth().currentUser?.delete()
+                    KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+                    return
+                }
+            })
             print("UID Found in keychain")
             performSegue(withIdentifier: "goToHome", sender: nil)
         }

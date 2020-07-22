@@ -38,7 +38,7 @@ class CreateUserProfile : UIViewController, UIImagePickerControllerDelegate & UI
         fieldsErrMsg.alpha = 0.0
         handleErrMsg.alpha = 0.0
         profilePic.makeRound()
-        
+        hideKeyboardWhenTappedAround()
         userData["email"] = Auth.auth().currentUser?.email
     }
     
