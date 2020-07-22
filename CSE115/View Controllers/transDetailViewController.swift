@@ -10,13 +10,7 @@
 import UIKit
 import FirebaseAuth
 import SwiftKeychainWrapper
+
 class transDetailViewController: UIViewController {
-
-
     
-    
-    
-    
-
-
 }

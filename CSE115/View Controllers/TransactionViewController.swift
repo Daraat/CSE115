@@ -28,6 +28,7 @@ class TransactionViewController: UIViewController, UIImagePickerControllerDelega
     
     let dbRef = Database.database().reference()
     let storageRef = Storage.storage().reference()
+    let vc = UIImagePickerController()
     
     var usrFound = false
     var data :Dictionary<String, Any> = [
@@ -40,13 +41,32 @@ class TransactionViewController: UIViewController, UIImagePickerControllerDelega
         "owner" : true
     ]
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
+        userNotFoundLabel.alpha = 0
+        vc.delegate = self
+        
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = UIDatePicker.Mode.date
+        datePicker.addTarget(self, action: #selector(TransactionViewController.datePickerValueChanged(sender:)), for: UIControl.Event.valueChanged)
+        loanDateText.inputView = datePicker
+        returnDateText.inputView = datePicker
+        
+        let gestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(backgroundTap(gesture:)));
+        view.addGestureRecognizer(gestureRecognizer)
+        
+        let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
+        dbRef.child("userHandlesByID").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
+            self.data["loanerHandle"] = snapshot.value!
+        })
+    }
     
     @IBAction func backBtnPressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
     @IBAction func picTaker(_ sender: Any) {
-        let vc = UIImagePickerController()
         vc.sourceType = .camera
         vc.allowsEditing = true
         vc.delegate = self
@@ -69,23 +89,6 @@ class TransactionViewController: UIViewController, UIImagePickerControllerDelega
         addPicBtn.setImage(image, for: .normal)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        hideKeyboardWhenTappedAround()
-        userNotFoundLabel.alpha = 0
-        let datePicker = UIDatePicker()
-        datePicker.datePickerMode = UIDatePicker.Mode.date
-        datePicker.addTarget(self, action: #selector(TransactionViewController.datePickerValueChanged(sender:)), for: UIControl.Event.valueChanged)
-        loanDateText.inputView = datePicker
-        returnDateText.inputView = datePicker
-        let gestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(backgroundTap(gesture:)));
-        view.addGestureRecognizer(gestureRecognizer)
-        
-        let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
-        dbRef.child("userHandlesByID").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
-            self.data["loanerHandle"] = snapshot.value!
-        })
-    }
     @IBAction func searchUser(_ sender: Any) {
         isUserFound()
             }
