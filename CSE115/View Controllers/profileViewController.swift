@@ -21,6 +21,9 @@ class profileViewController: UIViewController{
           dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func profileEditPage(_ sender: Any) {
+        
+    }
     
     @IBOutlet weak var profileP: UIImageView!
     

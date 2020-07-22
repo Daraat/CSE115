@@ -20,6 +20,9 @@
 		4788CC7424BFD7D800BC83F0 /* icons8-add-camera-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */; };
 		4788CC7624BFD88B00BC83F0 /* icons8-camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7524BFD88A00BC83F0 /* icons8-camera-50.png */; };
 		479B49BA24C26F250095A864 /* CustomBut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B49B924C26F250095A864 /* CustomBut.swift */; };
+		47E0AF1C24C7BFCB00BBB8FD /* transDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0AF1B24C7BFCB00BBB8FD /* transDetailViewController.swift */; };
+		47E0AF1E24C7D36000BBB8FD /* icons8-edit-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0AF1D24C7D36000BBB8FD /* icons8-edit-24.png */; };
+		47E0AF2024C7D47B00BBB8FD /* profileEditPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0AF1F24C7D47B00BBB8FD /* profileEditPage.swift */; };
 		47E587CB24AAA52600CEA744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CA24AAA52600CEA744 /* AppDelegate.swift */; };
 		47E587CD24AAA52600CEA744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CC24AAA52600CEA744 /* SceneDelegate.swift */; };
 		47E587CF24AAA52600CEA744 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CE24AAA52600CEA744 /* SignInViewController.swift */; };
@@ -71,6 +74,9 @@
 		4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-add-camera-100.png"; sourceTree = "<group>"; };
 		4788CC7524BFD88A00BC83F0 /* icons8-camera-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-camera-50.png"; sourceTree = "<group>"; };
 		479B49B924C26F250095A864 /* CustomBut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBut.swift; sourceTree = "<group>"; };
+		47E0AF1B24C7BFCB00BBB8FD /* transDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transDetailViewController.swift; sourceTree = "<group>"; };
+		47E0AF1D24C7D36000BBB8FD /* icons8-edit-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-edit-24.png"; sourceTree = "<group>"; };
+		47E0AF1F24C7D47B00BBB8FD /* profileEditPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileEditPage.swift; sourceTree = "<group>"; };
 		47E587C724AAA52600CEA744 /* CSE115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSE115.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E587CA24AAA52600CEA744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47E587CC24AAA52600CEA744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -157,7 +163,8 @@
 				47FAA9DE24C111420048E025 /* HelpViewController.swift */,
 				2856C48B24C3E6700031A153 /* CreateUserProfile.swift */,
 				476B3FCE24C25DAE00F086FD /* profileViewController.swift */,
-
+				47E0AF1B24C7BFCB00BBB8FD /* transDetailViewController.swift */,
+				47E0AF1F24C7D47B00BBB8FD /* profileEditPage.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -240,6 +247,7 @@
 				47EF77B124ABE3CD00B2E81E /* icons8-google-150.png */,
 				47E587FD24AAC27500CEA744 /* Italiana-Regular.ttf */,
 				4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */,
+				47E0AF1D24C7D36000BBB8FD /* icons8-edit-24.png */,
 				47FAA9E024C13ACD0048E025 /* pageOne.png */,
 			);
 			path = "Fonts and icons";
@@ -376,6 +384,7 @@
 				47EF77B624ABEA4400B2E81E /* icons8-facebook-150 (1).png in Resources */,
 				2839389C24BFC18A005D2138 /* GoogleService-Info.plist in Resources */,
 				47EF77B224ABE3CD00B2E81E /* icons8-google-150.png in Resources */,
+				47E0AF1E24C7D36000BBB8FD /* icons8-edit-24.png in Resources */,
 				47E587D724AAA52700CEA744 /* LaunchScreen.storyboard in Resources */,
 				47E587D424AAA52700CEA744 /* Assets.xcassets in Resources */,
 				47E587FE24AAC27500CEA744 /* Italiana-Regular.ttf in Resources */,
@@ -509,8 +518,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E0AF2024C7D47B00BBB8FD /* profileEditPage.swift in Sources */,
 				479B49BA24C26F250095A864 /* CustomBut.swift in Sources */,
 				47E587CF24AAA52600CEA744 /* SignInViewController.swift in Sources */,
+				47E0AF1C24C7BFCB00BBB8FD /* transDetailViewController.swift in Sources */,
 				287D0E5E24C2609300D68637 /* FancyMenuButton.swift in Sources */,
 				47EF77BA24ABF50900B2E81E /* RegViewController.swift in Sources */,
 				2856C48C24C3E6700031A153 /* CreateUserProfile.swift in Sources */,
