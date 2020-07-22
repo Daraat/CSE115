@@ -896,9 +896,6 @@
                                                 <constraint firstItem="UMv-qP-7f7" firstAttribute="centerY" secondItem="R5F-LJ-Id4" secondAttribute="centerY" id="zAh-rz-eCN"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="3k3-Cs-E4V" kind="show" identifier="transactionDetail" id="zzG-gI-xz9"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -925,6 +922,7 @@
                     </view>
                     <connections>
                         <outlet property="feedTableView" destination="PI5-sE-xwd" id="fDG-8x-zlb"/>
+                        <segue destination="3k3-Cs-E4V" kind="show" identifier="goToDetails" id="A9j-vD-7mT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jh1-2p-qgO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

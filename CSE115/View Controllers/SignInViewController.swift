@@ -53,6 +53,15 @@ class ViewController: UIViewController {
                     return
                 }
             })
+            
+            if(!KeychainWrapper.standard.hasValue(forKey: USR_HANDLE)){
+                dbRef.child(uid).observeSingleEvent(of: .value, with: { (snapshot) in
+                    let handl = snapshot.value as! String
+                    KeychainWrapper.standard.set(handl, forKey: USR_HANDLE)
+                })
+                
+            }
+            
             print("UID Found in keychain")
             performSegue(withIdentifier: "goToHome", sender: nil)
         }
