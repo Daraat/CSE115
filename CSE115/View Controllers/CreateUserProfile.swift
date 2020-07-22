@@ -8,8 +8,7 @@
 
 import UIKit
 import Firebase
-import FirebaseAuth
-import FirebaseDatabase
+import SwiftKeychainWrapper
 
 
 class CreateUserProfile : UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate{
@@ -136,6 +135,7 @@ class CreateUserProfile : UIViewController, UIImagePickerControllerDelegate & UI
                     self.databaseRef.child("users").child(handle).setValue(self.userData)
                     self.databaseRef.child("userHandlesByID").child(Auth.auth().currentUser!.uid).setValue(handle)
                     print("Success, user profile created.")
+                    KeychainWrapper.standard.set((handle), forKey: USR_HANDLE)
                     self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
                     
                 }
