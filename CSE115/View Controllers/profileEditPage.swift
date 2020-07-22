@@ -25,8 +25,10 @@ class profileEditPage: UIViewController, UIImagePickerControllerDelegate & UINav
     var imagePicker = UIImagePickerController()
 
     @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var lastNameEdit: UITextField!
-    @IBOutlet weak var nameEdit: UITextField!
+    @IBOutlet weak var editName: UITextField!
+    
+    @IBOutlet weak var editLastName: UITextField!
+    
     @IBOutlet weak var profilePic: UIImageView!
     
     override func viewDidLoad() {
@@ -36,8 +38,7 @@ class profileEditPage: UIViewController, UIImagePickerControllerDelegate & UINav
               
           }
     
-    
-    @IBAction func editPictureKey(_ sender: Any) {
+    @IBAction func editPicKey(_ sender: Any) {
         
         
             if UIImagePickerController.isSourceTypeAvailable(.savedPhotosAlbum){
@@ -50,8 +51,9 @@ class profileEditPage: UIViewController, UIImagePickerControllerDelegate & UINav
                 present(imagePicker, animated: true, completion: nil)
                 
                 
-            }
-        
+    }
+    
+
         
         
      
@@ -74,15 +76,11 @@ class profileEditPage: UIViewController, UIImagePickerControllerDelegate & UINav
         }
     
     
-    @IBAction func compKey(_ sender: Any) {
-        
-        dismiss(animated: true, completion: nil)
 
-        
-        
-        
-    }
     
+    @IBAction func editKey(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
     
     
