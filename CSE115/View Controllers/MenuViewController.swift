@@ -35,8 +35,6 @@ class MenuViewController: UIViewController {
             self.dbRef.child("users").child(self.userHandle).child("profilePicPath").observeSingleEvent(of: .value, with: { (snapshot) in
                 
                 let imgRef = Storage.storage().reference(withPath: snapshot.value as! String)
-                print(imgRef)
-                print(snapshot.value as! String)
                 
                 imgRef.getData(maxSize: 1 * 2048 * 2048, completion: { data, error in
                     if let error = error {
@@ -48,13 +46,14 @@ class MenuViewController: UIViewController {
 
             })
         })
-
+        profilePic.makeRound()
     }
     
     
 
     @IBAction func logOutBtnPressed(_ sender: Any) {
         KeychainWrapper.standard.removeObject(forKey: KEY_UID)
+        KeychainWrapper.standard.removeObject(forKey: USR_HANDLE)
         //dismiss(animated: true, completion: nil)
         self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
 

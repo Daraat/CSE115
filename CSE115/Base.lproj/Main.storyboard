@@ -515,10 +515,10 @@
                         <viewLayoutGuide key="safeArea" id="scs-xw-rR6"/>
                     </view>
                     <connections>
-                        <outlet property="lastNameTag" destination="4DJ-Oi-Jff" id="oGD-fS-Jyh"/>
-                        <outlet property="nameTag" destination="y7e-g1-sR7" id="VS7-kQ-W1s"/>
+                        <outlet property="lastNameTag" destination="rlG-Jl-YZ9" id="b7g-Bn-tLm"/>
+                        <outlet property="nameTag" destination="H65-8e-lGj" id="AhU-wZ-QJc"/>
                         <outlet property="profileP" destination="7kv-o2-zfa" id="3uR-dq-J6f"/>
-                        <outlet property="transactionTag" destination="vlz-LC-ncB" id="PjL-81-5tR"/>
+                        <outlet property="transactionTag" destination="uBz-pL-4nA" id="WYS-tT-vd9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GKq-5O-txq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

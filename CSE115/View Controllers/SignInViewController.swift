@@ -86,7 +86,13 @@ class ViewController: UIViewController {
                 }
                 return
             }else{
+                let uid = (result?.user.uid)!
                 KeychainWrapper.standard.set((result?.user.uid)!, forKey: KEY_UID)
+                self.dbRef.child(uid).observeSingleEvent(of: .value, with: {(snapshot) in
+                    let handle = (snapshot.value as! String)
+                    print(handle)
+                    KeychainWrapper.standard.set(handle, forKey: USR_HANDLE)
+                    })
                 print("SIGNUP: User login succesful")
                 self.performSegue(withIdentifier: "goToHome", sender: nil)
             }
