@@ -11,16 +11,20 @@
 		282FDD7124AF827200392D0C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282FDD7024AF827200392D0C /* Constants.swift */; };
 		2839389C24BFC18A005D2138 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2839389B24BFC189005D2138 /* GoogleService-Info.plist */; };
 		2856C48C24C3E6700031A153 /* CreateUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2856C48B24C3E6700031A153 /* CreateUserProfile.swift */; };
-		2866EE1E24BAABFD003247D1 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2866EE1D24BAABFD003247D1 /* MenuViewController.swift */; };
+		2866EE1E24BAABFD003247D1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2866EE1D24BAABFD003247D1 /* HomeViewController.swift */; };
 		2866EE2024BABD72003247D1 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2866EE1F24BABD72003247D1 /* TransactionViewController.swift */; };
-		286CD2AF24C6DCF700855472 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286CD2AE24C6DCF700855472 /* HomeViewController.swift */; };
 		287D0E5E24C2609300D68637 /* FancyMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287D0E5D24C2609300D68637 /* FancyMenuButton.swift */; };
 		41B9E81158FC4D74FAFAA066 /* Pods_CSE115_CSE115UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3D1DDF7EDBF172A5FEB46A4 /* Pods_CSE115_CSE115UITests.framework */; };
 		476B3FCF24C25DAE00F086FD /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B3FCE24C25DAE00F086FD /* profileViewController.swift */; };
-		476B3FD124C2625700F086FD /* profileCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476B3FD024C2625700F086FD /* profileCustom.swift */; };
 		4788CC7424BFD7D800BC83F0 /* icons8-add-camera-100.png in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */; };
 		4788CC7624BFD88B00BC83F0 /* icons8-camera-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 4788CC7524BFD88A00BC83F0 /* icons8-camera-50.png */; };
 		479B49BA24C26F250095A864 /* CustomBut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479B49B924C26F250095A864 /* CustomBut.swift */; };
+		47E0AF1C24C7BFCB00BBB8FD /* transDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0AF1B24C7BFCB00BBB8FD /* transDetailViewController.swift */; };
+		47E0AF1E24C7D36000BBB8FD /* icons8-edit-24.png in Resources */ = {isa = PBXBuildFile; fileRef = 47E0AF1D24C7D36000BBB8FD /* icons8-edit-24.png */; };
+		47E0AF2024C7D47B00BBB8FD /* profileEditPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0AF1F24C7D47B00BBB8FD /* profileEditPage.swift */; };
+		47E0AF2224C7E63B00BBB8FD /* profileCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0AF2124C7E63A00BBB8FD /* profileCustom.swift */; };
+		47E0AF2424C7E6C900BBB8FD /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0AF2324C7E6C800BBB8FD /* MenuViewController.swift */; };
+		47E0AF2624C7E84900BBB8FD /* profileEditPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E0AF2524C7E84900BBB8FD /* profileEditPage.swift */; };
 		47E587CB24AAA52600CEA744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CA24AAA52600CEA744 /* AppDelegate.swift */; };
 		47E587CD24AAA52600CEA744 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CC24AAA52600CEA744 /* SceneDelegate.swift */; };
 		47E587CF24AAA52600CEA744 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E587CE24AAA52600CEA744 /* SignInViewController.swift */; };
@@ -64,15 +68,19 @@
 		282FDD7024AF827200392D0C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2839389B24BFC189005D2138 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		2856C48B24C3E6700031A153 /* CreateUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserProfile.swift; sourceTree = "<group>"; };
-		2866EE1D24BAABFD003247D1 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		2866EE1D24BAABFD003247D1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2866EE1F24BABD72003247D1 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
-		286CD2AE24C6DCF700855472 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		287D0E5D24C2609300D68637 /* FancyMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyMenuButton.swift; sourceTree = "<group>"; };
 		476B3FCE24C25DAE00F086FD /* profileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
-		476B3FD024C2625700F086FD /* profileCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileCustom.swift; sourceTree = "<group>"; };
 		4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-add-camera-100.png"; sourceTree = "<group>"; };
 		4788CC7524BFD88A00BC83F0 /* icons8-camera-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-camera-50.png"; sourceTree = "<group>"; };
 		479B49B924C26F250095A864 /* CustomBut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomBut.swift; sourceTree = "<group>"; };
+		47E0AF1B24C7BFCB00BBB8FD /* transDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = transDetailViewController.swift; sourceTree = "<group>"; };
+		47E0AF1D24C7D36000BBB8FD /* icons8-edit-24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icons8-edit-24.png"; sourceTree = "<group>"; };
+		47E0AF1F24C7D47B00BBB8FD /* profileEditPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileEditPage.swift; sourceTree = "<group>"; };
+		47E0AF2124C7E63A00BBB8FD /* profileCustom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileCustom.swift; sourceTree = "<group>"; };
+		47E0AF2324C7E6C800BBB8FD /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		47E0AF2524C7E84900BBB8FD /* profileEditPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileEditPage.swift; sourceTree = "<group>"; };
 		47E587C724AAA52600CEA744 /* CSE115.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSE115.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E587CA24AAA52600CEA744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47E587CC24AAA52600CEA744 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -154,12 +162,15 @@
 			children = (
 				47EF77B924ABF50900B2E81E /* RegViewController.swift */,
 				47E587CE24AAA52600CEA744 /* SignInViewController.swift */,
-				2866EE1D24BAABFD003247D1 /* MenuViewController.swift */,
+				2866EE1D24BAABFD003247D1 /* HomeViewController.swift */,
+				47E0AF2324C7E6C800BBB8FD /* MenuViewController.swift */,
 				2866EE1F24BABD72003247D1 /* TransactionViewController.swift */,
 				47FAA9DE24C111420048E025 /* HelpViewController.swift */,
 				2856C48B24C3E6700031A153 /* CreateUserProfile.swift */,
 				476B3FCE24C25DAE00F086FD /* profileViewController.swift */,
-				286CD2AE24C6DCF700855472 /* HomeViewController.swift */,
+				47E0AF1B24C7BFCB00BBB8FD /* transDetailViewController.swift */,
+				47E0AF2524C7E84900BBB8FD /* profileEditPage.swift */,
+				47E0AF1F24C7D47B00BBB8FD /* profileEditPage.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -168,8 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				287D0E5D24C2609300D68637 /* FancyMenuButton.swift */,
+				47E0AF2124C7E63A00BBB8FD /* profileCustom.swift */,
 				479B49B924C26F250095A864 /* CustomBut.swift */,
-				476B3FD024C2625700F086FD /* profileCustom.swift */,
 			);
 			path = "Custom View";
 			sourceTree = "<group>";
@@ -242,6 +253,7 @@
 				47EF77B124ABE3CD00B2E81E /* icons8-google-150.png */,
 				47E587FD24AAC27500CEA744 /* Italiana-Regular.ttf */,
 				4788CC7324BFD7D800BC83F0 /* icons8-add-camera-100.png */,
+				47E0AF1D24C7D36000BBB8FD /* icons8-edit-24.png */,
 				47FAA9E024C13ACD0048E025 /* pageOne.png */,
 			);
 			path = "Fonts and icons";
@@ -378,6 +390,7 @@
 				47EF77B624ABEA4400B2E81E /* icons8-facebook-150 (1).png in Resources */,
 				2839389C24BFC18A005D2138 /* GoogleService-Info.plist in Resources */,
 				47EF77B224ABE3CD00B2E81E /* icons8-google-150.png in Resources */,
+				47E0AF1E24C7D36000BBB8FD /* icons8-edit-24.png in Resources */,
 				47E587D724AAA52700CEA744 /* LaunchScreen.storyboard in Resources */,
 				47E587D424AAA52700CEA744 /* Assets.xcassets in Resources */,
 				47E587FE24AAC27500CEA744 /* Italiana-Regular.ttf in Resources */,
@@ -511,17 +524,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E0AF2024C7D47B00BBB8FD /* profileEditPage.swift in Sources */,
 				479B49BA24C26F250095A864 /* CustomBut.swift in Sources */,
 				47E587CF24AAA52600CEA744 /* SignInViewController.swift in Sources */,
+				47E0AF1C24C7BFCB00BBB8FD /* transDetailViewController.swift in Sources */,
 				287D0E5E24C2609300D68637 /* FancyMenuButton.swift in Sources */,
 				47EF77BA24ABF50900B2E81E /* RegViewController.swift in Sources */,
 				2856C48C24C3E6700031A153 /* CreateUserProfile.swift in Sources */,
-				286CD2AF24C6DCF700855472 /* HomeViewController.swift in Sources */,
+				47E0AF2424C7E6C900BBB8FD /* MenuViewController.swift in Sources */,
 				47E587CB24AAA52600CEA744 /* AppDelegate.swift in Sources */,
 				47FAA9DF24C111420048E025 /* HelpViewController.swift in Sources */,
-				476B3FD124C2625700F086FD /* profileCustom.swift in Sources */,
 				47E587CD24AAA52600CEA744 /* SceneDelegate.swift in Sources */,
-				2866EE1E24BAABFD003247D1 /* MenuViewController.swift in Sources */,
+				47E0AF2624C7E84900BBB8FD /* profileEditPage.swift in Sources */,
+				2866EE1E24BAABFD003247D1 /* HomeViewController.swift in Sources */,
+				47E0AF2224C7E63B00BBB8FD /* profileCustom.swift in Sources */,
 				282FDD7124AF827200392D0C /* Constants.swift in Sources */,
 				476B3FCF24C25DAE00F086FD /* profileViewController.swift in Sources */,
 				2866EE2024BABD72003247D1 /* TransactionViewController.swift in Sources */,
@@ -699,13 +715,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5V3989G93A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CSE115/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cse115.CSE115-loanr";
+				PRODUCT_BUNDLE_IDENTIFIER = cse115.CSE115;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -718,13 +734,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5V3989G93A;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CSE115/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "cse115.CSE115-loanr";
+				PRODUCT_BUNDLE_IDENTIFIER = cse115.CSE115;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

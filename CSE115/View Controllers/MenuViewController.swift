@@ -23,7 +23,7 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let uid = KeychainWrapper.standard.string(forKey: KEY_UID)
-        
+        profilePic.makeRound()
         dbRef.child("userHandlesByID").child(uid!).observeSingleEvent(of: .value, with: { (snapshot) in
             self.userHandle = snapshot.value as! String
 

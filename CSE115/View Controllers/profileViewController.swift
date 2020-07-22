@@ -18,6 +18,19 @@ class profileViewController: UIViewController{
     @IBOutlet weak var nameTag: UILabel!
     @IBOutlet weak var transactionTag: UILabel!
     @IBOutlet weak var lastNameTag: UILabel!
+    @IBAction func Backbut(_ sender: Any) {
+          dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func profileEditPage(_ sender: Any) {
+        
+    }
+    
+    @IBOutlet weak var profileP: UIImageView!
+    
+    
+    
+    
     
     let dbRef = Database.database().reference().child("users")
     let storageRef = Storage.storage().reference()
@@ -26,6 +39,8 @@ class profileViewController: UIViewController{
      override func viewDidLoad() {
         super.viewDidLoad()
         profileP.makeRound()
+        //update first name
+        dbRef.child(handle).child("firstName").observeSingleEvent(of: .value, with: { (snapshot) in
         //update first name
         dbRef.child(handle).child("firstName").observeSingleEvent(of: .value, with: { (snapshot) in
             self.nameTag.text = (snapshot.value as! String)
@@ -48,12 +63,5 @@ class profileViewController: UIViewController{
                 }
             })
         })
-
-     }
-    
-    
-    @IBAction func Backbut(_ sender: Any) {
-          dismiss(animated: true, completion: nil)
     }
-    
 }
