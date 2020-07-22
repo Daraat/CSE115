@@ -38,7 +38,7 @@ class CreateUserProfile : UIViewController, UIImagePickerControllerDelegate & UI
         fieldsErrMsg.alpha = 0.0
         handleErrMsg.alpha = 0.0
         profilePic.makeRound()
-        
+        hideKeyboardWhenTappedAround()
         userData["email"] = Auth.auth().currentUser?.email
     }
     
@@ -49,7 +49,7 @@ class CreateUserProfile : UIViewController, UIImagePickerControllerDelegate & UI
             
             imagePicker.delegate = self
             imagePicker.sourceType = .savedPhotosAlbum
-            imagePicker.allowsEditing = false
+            imagePicker.allowsEditing = true
             
             present(imagePicker, animated: true, completion: nil)
             
@@ -148,7 +148,7 @@ class CreateUserProfile : UIViewController, UIImagePickerControllerDelegate & UI
     func uploadProfilePicToFireStore(){
         
         //get jpegData to be uploaded
-        guard let data = profilePic.image?.jpegData(compressionQuality: 1.0) else {
+        guard let data = profilePic.image?.jpegData(compressionQuality: 10.0) else {
             print("UPLDPROFPIC: error in getting jpegData")
             return
         }
