@@ -1349,7 +1349,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hor-Sq-NjA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Items Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Hor-Sq-NjA">
                                 <rect key="frame" x="40" y="72.666666666666671" width="155" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="155" id="CEO-5R-Dz5"/>
@@ -1370,27 +1370,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UsL-cX-BuP">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UsL-cX-BuP">
                                 <rect key="frame" x="41.666666666666657" y="226.66666666666666" width="152" height="49.999999999999972"/>
                                 <fontDescription key="fontDescription" name="Italiana-Regular" family="Italiana" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaned Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7zW-Zi-tLf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaned Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7zW-Zi-tLf">
                                 <rect key="frame" x="37.666666666666657" y="331.66666666666669" width="160" height="32"/>
                                 <fontDescription key="fontDescription" name="Italiana-Regular" family="Italiana" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYH-OO-z0Z">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qYH-OO-z0Z">
                                 <rect key="frame" x="37.666666666666657" y="398.66666666666669" width="160" height="32"/>
                                 <fontDescription key="fontDescription" name="Italiana-Regular" family="Italiana" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-nw-JlO" customClass="CustomBut" customModule="CSE115" customModuleProvider="target">
-                                <rect key="frame" x="20" y="721" width="374" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ahc-nw-JlO" customClass="CustomBut" customModule="CSE115" customModuleProvider="target">
+                                <rect key="frame" x="20" y="737" width="374" height="41"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Italiana-Regular" family="Italiana" pointSize="24"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -1421,7 +1420,7 @@
                                     <constraint firstAttribute="height" constant="2" id="RLH-xS-ml3"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q1u-ap-78k">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Q1u-ap-78k">
                                 <rect key="frame" x="41.666666666666657" y="159.66666666666666" width="152" height="32"/>
                                 <fontDescription key="fontDescription" name="Italiana-Regular" family="Italiana" pointSize="27"/>
                                 <nil key="textColor"/>
@@ -1445,6 +1444,8 @@
                             <constraint firstItem="kth-Uk-pZV" firstAttribute="top" secondItem="vfX-OY-E26" secondAttribute="top" constant="5" id="1Lv-QY-j8s"/>
                             <constraint firstItem="m8H-GG-7n2" firstAttribute="centerX" secondItem="jPT-bW-U4b" secondAttribute="centerX" id="29J-Um-tHV"/>
                             <constraint firstAttribute="height" secondItem="a7z-qz-9ff" secondAttribute="height" multiplier="26.3125" id="4OL-c3-Nio"/>
+                            <constraint firstItem="ahc-nw-JlO" firstAttribute="leading" secondItem="vfX-OY-E26" secondAttribute="leading" constant="20" id="6HC-Fj-Sgb"/>
+                            <constraint firstItem="vfX-OY-E26" firstAttribute="bottom" secondItem="ahc-nw-JlO" secondAttribute="bottom" constant="30" id="A6B-iJ-VHa"/>
                             <constraint firstItem="UsL-cX-BuP" firstAttribute="top" secondItem="Q1u-ap-78k" secondAttribute="bottom" constant="35" id="A8w-J7-5vD"/>
                             <constraint firstItem="egG-F5-34Z" firstAttribute="height" secondItem="Vt3-Bc-TW3" secondAttribute="height" id="AVB-Mh-yBU"/>
                             <constraint firstItem="qYH-OO-z0Z" firstAttribute="centerX" secondItem="7zW-Zi-tLf" secondAttribute="centerX" id="AWa-zy-ByG"/>
@@ -1487,6 +1488,7 @@
                             <constraint firstItem="a7z-qz-9ff" firstAttribute="width" secondItem="m8H-GG-7n2" secondAttribute="width" id="y3G-51-E5U"/>
                             <constraint firstItem="m8H-GG-7n2" firstAttribute="width" secondItem="jPT-bW-U4b" secondAttribute="width" id="yJn-VH-amW"/>
                             <constraint firstItem="Q1u-ap-78k" firstAttribute="height" secondItem="Hor-Sq-NjA" secondAttribute="height" id="zOc-op-ugD"/>
+                            <constraint firstItem="vfX-OY-E26" firstAttribute="trailing" secondItem="ahc-nw-JlO" secondAttribute="trailing" constant="20" id="zbZ-Xv-EQx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vfX-OY-E26"/>
                     </view>
