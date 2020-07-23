@@ -3,7 +3,7 @@ Project name: Loanr
 Team: The Boys
 Date: 7/18/2020  
   
-This is a simple ios application that help user keep tracking the stuff that being loaned.
+This is a simple ios application that helps the user keep track of the stuff that being loaned.
 Users are able to create and finish transactions (item/borrower/loan date/return date)
 note: all documents (Sprint_plan/report; Release_plan; Test_report; Prototype_document; README) are under *Documents* dirctory 
 ```
